@@ -1,0 +1,41 @@
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 1023px) {
+}
+
+@media only screen and (max-width: 990px) {
+}
+
+@media only screen and (max-width: 900px) {
+}
+
+@media only screen and (max-width: 767px) {
+  .hero-img {
+    display: none;
+  }
+  .aboutme-img-hide {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .hero-text2 {
+    font-size: 2.2rem;
+  }
+  .hero {
+    height: 95vh;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+}
+
+@media only screen and (max-height: 420px) {
+  .hero {
+    height: 100vh;
+  }
+}
+
+/* @media only screen and (max-height: 400px) {       
+     */
