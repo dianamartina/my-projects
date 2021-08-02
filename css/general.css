@@ -1,0 +1,140 @@
+/*-------------  TYPOGRAPHY SYSTEM ----------
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+ ----------  WHITESPACE SYSTEM ----------
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+:root {
+  --primary: #357e88;
+  --primary-light-3: #54969f;
+  --primary-light-2: #8abfc7;
+  --primary-light-1: #d7ecef;
+  --primary-dark-1: #1e6f7a;
+  --primary-dark-1: #0f555f;
+  --secondary: #a43e8a;
+  --secondary-light-2: #be63a7;
+  --secondary-light-1: #d995c8;
+  --secondary-dark-1: #922276;
+  --secondary-dark-2: #73105a;
+  --white: #fff;
+  --dark: #0a191b;
+  --grey-light-1: #e8eff0;
+  --grey-light-2: #d2dadb;
+  --grey-dark-1: #6e7c7e;
+  --grey-dark-2: #4e5859;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; we don't use px bacause will set the size(to 10px) no matter if the user changes his settings in browser*/
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden; /* we don't want to see the mobile menu from outside the screen */
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--grey-dark-2);
+  overflow-x: hidden;
+}
+
+/* ---------- General components ---------- */
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  color: var(--grey-color-5);
+  letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  color: var(--white);
+  font-size: 5.2rem;
+  line-height: 1.1;
+  margin-bottom: 4.8rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+/* ---------- Buttons ---------- */
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: var(--secondary-dark-1);
+  color: var(--white);
+  transition: all 0.3s;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  background-color: var(--secondary-dark-2);
+  color: var(--white);
+}
+
+.btn-outline:link,
+.btn-outline:visited {
+  padding: 1.2rem 2.4rem;
+  background-color: transparent;
+  color: var(--white);
+  box-shadow: inset 0 0 0 1px var(--white);
+  transition: all 0.3s;
+}
+
+.btn-outline:hover,
+.btn-outline:active {
+  background-color: var(--white);
+  color: var(--primary);
+  box-shadow: inset 0 0 0 1px var(--white); /* creates a border*/
+}
