@@ -1,9 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
-
 .hero {
   background-image: linear-gradient(
-    45deg,
-    var(--primary-light-1),
+    to bottom right,
+    var(--white),
     var(--primary-dark-1)
   );
   height: 100vh;
@@ -20,7 +18,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
-  width: 50vw;
+  width: 55vw;
   height: 100vh;
 }
 
@@ -28,6 +26,7 @@
   height: 8rem;
   display: flex;
   align-items: center;
+  padding: 0 3.2rem;
   position: relative;
   z-index: 2;
 }
@@ -61,89 +60,45 @@
 
 /* ---------- Hero area --------- */
 
-.hero {
-  margin: 0 auto;
-  padding: 0 3.2rem;
-}
-
 .hero-area {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: calc(90vh - 8rem);
-}
-
-.hero-text {
-  align-self: center;
+  gap: 8rem;
+  height: calc(100vh - 8rem);
 }
 
 .hero-img-box {
   z-index: 3;
-  position: absolute;
-
-  right: -10%;
-  bottom: 0;
 }
 .hero-image {
-  height: 100vh;
-}
-
-/* --- Hero waves --- */
-.wave {
+  max-width: 50%;
+  max-height: calc(100vh - 8rem);
   position: absolute;
-  bottom: 0;
   left: 0;
-  width: 200%;
-  overflow: hidden;
-  /* line-height: 0; */
+  bottom: 0;
 }
-.wave-1 {
-  /* animation: animateWave 30s linear infinite; */
-  z-index: 11;
-  opacity: 1;
-  height: 20vh;
-  animation-delay: 0s;
-  background-image: url(../images/wave1.svg);
-  background-repeat: repeat-x;
-  background-size: cover;
+.hero-text {
+  width: 90%;
+  align-self: center;
+  justify-self: end;
+  z-index: 3;
 }
 
-.wave-2 {
-  animation: animateWave 30s linear infinite;
-  z-index: 10;
-  opacity: 0.3;
-  height: 30vh;
-  animation-delay: 5s;
-  background-image: url(../images/wave2.svg);
-  background-repeat: repeat-x;
-  background-size: cover;
+.hero-text-name {
+  font-family: "me";
+  background-image: linear-gradient(
+    45deg,
+    var(--secondary-dark-2),
+    var(--tertiary)
+  );
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
-.wave-3 {
-  animation: animateWave 30s linear infinite;
-  z-index: 9;
-  opacity: 0.6;
-  height: 20vh;
-  animation-delay: 10s;
-  background-image: url(../images/wave2.svg);
-  background-repeat: repeat-x;
-  background-size: cover;
-}
-
-/* ---------- Animations ---------- */
-@keyframes animateWave {
-  0% {
-    transform: translateX(-40%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes animateWave2 {
-  0% {
-    transform: translateX(50%);
-  }
-  100% {
-    transform: translateX(0);
-  }
+.hero-text-name span {
+  font-weight: 300;
 }
