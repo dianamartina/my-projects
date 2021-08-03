@@ -55,6 +55,12 @@ body {
 
 /* ---------- General components ---------- */
 
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8rem;
+}
+
 .container {
   max-width: 128rem;
   margin: 0 auto;
@@ -66,21 +72,41 @@ body {
 .heading-tertiary {
   font-family: sans-serif;
   font-weight: 400;
-  color: var(--grey-color-5);
+  color: var(--primary);
   letter-spacing: -0.5px;
 }
 
 .heading-primary {
   color: var(--white);
+
   font-size: 4.4rem;
   line-height: 1.1;
   margin-bottom: 4.8rem;
 }
 
 .heading-secondary {
+  text-align: center;
   font-size: 3.6rem;
   line-height: 1.2;
   margin-bottom: 9.6rem;
+}
+
+.heading-secondary::before {
+  content: "";
+  display: block;
+  width: 7rem;
+  height: 2px;
+  background: var(--primary-light-2);
+  position: relative;
+  top: 5.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s;
+}
+
+.heading-secondary:hover::before {
+  width: 20rem;
+  cursor: pointer;
 }
 
 .heading-tertiary {
@@ -140,4 +166,10 @@ body {
   background-color: var(--white);
   color: var(--primary);
   box-shadow: inset 0 0 0 1px var(--white); /* creates a border*/
+}
+
+/* ---------- paragraph ---------- */
+.text-description {
+  font-size: 1.8rem;
+  margin-bottom: 2.4rem;
 }
