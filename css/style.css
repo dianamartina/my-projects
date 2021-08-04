@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap");
+
 /* =========== Section hero ========== */
 
 .section-hero {
@@ -49,9 +51,10 @@
 .main-nav-link:link,
 .main-nav-link:visited {
   text-decoration: none;
-  color: var(--white);
+  font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 1.8rem;
+  color: var(--white);
   transition: all 0.3s;
 }
 
@@ -64,6 +67,8 @@
 
 .hero-area {
   height: calc(100vh - 8rem);
+  max-width: 128rem;
+  margin: 0 auto;
 }
 
 .hero-img-box {
@@ -84,7 +89,9 @@
 }
 
 .hero-text-name {
-  font-family: sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 5.2rem;
   background-image: linear-gradient(
     45deg,
     var(--secondary-dark-2),
@@ -115,7 +122,6 @@
 /* =========== Section skills ========== */
 
 .section-skills {
-  padding: 6.4rem 0;
 }
 
 .skills-body {
@@ -142,4 +148,71 @@
 .skill-icon svg {
   height: 4.4rem;
   fill: var(--tertiary);
+}
+
+.gradient-start {
+  stop-color: var(--tertiary);
+}
+.gradient-end {
+  stop-color: var(--tertiary-dark-2);
+}
+
+/* =========== Section projects ========== */
+
+.section-projects {
+  padding: 9.6rem 0;
+}
+
+.project-even {
+  padding: 6.4rem 0;
+}
+
+.project-odd {
+  padding: 6.4rem 0;
+  background-color: var(--primary-light-0);
+}
+
+.project-text-box {
+}
+
+.project-top-heading {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--grey);
+  margin-bottom: 1.6rem;
+  letter-spacing: 2.5px;
+}
+
+.project-technologies {
+  list-style: none;
+  display: flex;
+  gap: 1.6rem;
+  margin-bottom: 4.8rem;
+}
+
+.project-tech {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: var(--tertiary-light-1);
+  border-radius: 1px;
+  color: var(--primary-dark-2);
+  padding: 0.4rem 0.8rem;
+}
+
+.project-sources {
+  margin-top: 8rem;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.project-img-box {
+  transition: all 0.5s;
+}
+
+.project-img-box:hover {
+  transform: scale(1.05);
 }

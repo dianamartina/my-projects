@@ -9,25 +9,33 @@
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
 
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap");
+
 :root {
   --primary: #357e88;
+  --primary-light-0: #eef7f9;
   --primary-light-1: #d7ecef;
   --primary-light-2: #8abfc7;
   --primary-light-3: #54969f;
   --primary-dark-1: #1e6f7a;
   --primary-dark-2: #0f555f;
   --secondary: #a43e8a;
+  --secondary-light-0: #f4e1ef;
   --secondary-light-1: #d995c8;
   --secondary-light-2: #be63a7;
   --secondary-dark-1: #922276;
   --secondary-dark-2: #73105a;
   --tertiary: #f6c45f;
   --tertiary-light-1: #fae1af;
+  --tertiary-light-2: #f7cc77;
+  --tertiary-dark-1: #e79e0d;
+  --tertiary-dark-2: #b97f0b;
 
   --white: #fff;
   --dark: #0a191b;
   --grey-light-1: #e8eff0;
   --grey-light-2: #d2dadb;
+  --grey: #bfc1c2;
   --grey-dark-1: #6e7c7e;
   --grey-dark-2: #4e5859;
 }
@@ -65,39 +73,35 @@ body {
 .container {
   max-width: 128rem;
   margin: 0 auto;
-  /* padding: 0 3.2rem; */
+  padding: 0 3.2rem;
 }
 
 .heading-primary,
 .heading-secondary,
-.heading-secondary-int,
 .heading-tertiary {
-  font-family: sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
-  color: var(--primary);
+  color: var(--primary-dark-1);
   letter-spacing: -0.5px;
 }
 
 .heading-primary {
   color: var(--white);
+  font-size: 4.8rem;
 
-  font-size: 4.4rem;
   line-height: 1.1;
   margin-bottom: 4.8rem;
 }
 
-.heading-secondary,
-.heading-secondary-int {
-  text-align: center;
-  font-size: 3.6rem;
-  line-height: 1.2;
+.heading-primary span:first-child {
+  font-size: 4.4rem;
 }
 
 .heading-secondary {
-  margin-bottom: 9.6rem;
-}
-.heading-secondary-int {
-  margin-bottom: 1.2rem;
+  text-align: center;
+  font-size: 4.4rem;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .heading-secondary::before {
@@ -119,7 +123,8 @@ body {
 }
 
 .heading-tertiary {
-  font-size: 3rem;
+  font-size: 3.6rem;
+  font-weight: 600;
   line-height: 1.2;
   margin-bottom: 3.2rem;
 }
@@ -129,8 +134,18 @@ body {
   font-size: 1.6rem;
   font-weight: 500;
   color: var(--white);
-  margin-bottom: 1.6rem;
-  letter-spacing: 0.75px;
+  margin-bottom: 3.2rem;
+  letter-spacing: 2.5px;
+}
+
+.mb-bg {
+  margin-bottom: 9.6rem;
+}
+.mb-md {
+  margin-bottom: 3.2rem;
+}
+.margin-bottom-sm {
+  margin-bottom: 1.2rem;
 }
 
 /* ---------- Buttons ---------- */
@@ -141,8 +156,8 @@ body {
   display: inline-block;
   text-decoration: none;
   font-size: 2rem;
-  font-weight: 600;
-  padding: 1.6rem 3.2rem;
+  font-weight: 500;
+  padding: 1.4rem 2.8rem;
   border-radius: 5px;
   border: none;
   cursor: pointer;
@@ -163,7 +178,8 @@ body {
 
 .btn-outline:link,
 .btn-outline:visited {
-  padding: 1.2rem 2.4rem;
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
   background-color: transparent;
   color: var(--white);
   box-shadow: inset 0 0 0 1px var(--tertiary);
@@ -175,6 +191,23 @@ body {
   background-color: var(--white);
   color: var(--primary);
   box-shadow: inset 0 0 0 1px var(--white); /* creates a border*/
+}
+
+.btn-text:link,
+.btn-text:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--secondary-dark-1);
+  border-bottom: 1px solid var(--secondary-dark-1);
+  transition: all 0.3s;
+}
+
+.btn-text:hover,
+.btn-text:active {
+  color: var(--primary-dark-1);
+  border-bottom: 1px solid var(--primary-dark-1);
 }
 
 /* ---------- paragraph ---------- */
