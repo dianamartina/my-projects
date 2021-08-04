@@ -105,9 +105,41 @@
 /* =========== Section about me ========== */
 
 .section-about-me {
-  padding: 9.6rem 0;
+  padding: 9.6rem 3.2rem;
 }
 
 .about-me-image {
   width: 100%;
+}
+
+/* =========== Section skills ========== */
+
+.section-skills {
+  padding: 6.4rem 0;
+}
+
+.skills-body {
+  background-color: var(--primary-dark-2);
+  padding: 6.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.skill-icon {
+  color: var(--tertiary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-title {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.skill-icon svg {
+  height: 4.4rem;
+  fill: var(--tertiary);
 }
