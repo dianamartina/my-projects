@@ -163,9 +163,9 @@
   margin-bottom: 0.8rem;
 }
 
-.skill-icon svg {
+.skill-icon-img {
   height: 5.2rem;
-  fill: var(--tertiary);
+  fill: var(--primary);
 }
 
 .gradient-start {
