@@ -122,39 +122,57 @@
 /* =========== Section skills ========== */
 
 .section-skills {
+  background-color: var(--primary-light-1);
+  padding: 9.6rem 0 3.2rem;
 }
 
 .skills-body {
-  background-color: var(--primary-dark-2);
-  padding: 6.4rem;
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 4.8rem;
+  padding-bottom: 9.6rem;
+}
+
+.skills-top-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 4.8px;
+  color: var(--tertiary-dark-1);
+  margin-bottom: 3.2rem;
+  text-align: center;
 }
 
 .skill-icon {
-  color: var(--tertiary);
+  color: var(--primary-dark-1);
+  background-image: url("../images/back-tool.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 13rem;
+  height: 14rem;
+  padding: 2rem;
 }
 
 .skill-title {
-  font-size: 2rem;
+  font-size: 2.4rem;
+  font-weight: 600;
   margin-bottom: 0.8rem;
 }
 
 .skill-icon svg {
-  height: 4.4rem;
+  height: 5.2rem;
   fill: var(--tertiary);
 }
 
 .gradient-start {
-  stop-color: var(--tertiary);
+  stop-color: var(--primary);
 }
 .gradient-end {
-  stop-color: var(--tertiary-dark-2);
+  stop-color: var(--primary-light-3);
 }
 
 /* =========== Section projects ========== */
@@ -164,11 +182,11 @@
 }
 
 .project-even {
-  padding: 6.4rem 0;
+  padding: 9.6rem 0;
 }
 
 .project-odd {
-  padding: 6.4rem 0;
+  padding: 9.6rem 0;
   background-color: var(--primary-light-0);
 }
 
@@ -185,14 +203,14 @@
   letter-spacing: 2.5px;
 }
 
-.project-technologies {
+.project-tools {
   list-style: none;
   display: flex;
   gap: 1.6rem;
   margin-bottom: 4.8rem;
 }
 
-.project-tech {
+.project-tool {
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -200,6 +218,11 @@
   border-radius: 1px;
   color: var(--primary-dark-2);
   padding: 0.4rem 0.8rem;
+}
+
+.project-tool span {
+  color: var(--grey-dark-1);
+  font-style: italic;
 }
 
 .project-sources {
