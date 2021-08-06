@@ -367,7 +367,7 @@
   /* font-weight: 600; */
   letter-spacing: 1.2px;
   text-decoration: none;
-  border-bottom: 1px dotted var(--secondary);
+  border-bottom: 2px dotted var(--secondary);
   padding-bottom: 0.5rem;
 }
 
