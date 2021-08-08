@@ -11,6 +11,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
 :root {
   --primary: #357e88;
   --primary-light-0: #eef7f9;
@@ -55,8 +57,8 @@ html {
 }
 
 body {
-  font-family: sans-serif;
-  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   line-height: 1;
   color: var(--grey-dark-2);
   overflow-x: hidden;
@@ -76,6 +78,8 @@ body {
   padding: 0 3.2rem;
 }
 
+/* ---------- Headings ---------- */
+
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
@@ -92,7 +96,7 @@ body {
   margin-bottom: 4.8rem;
 }
 
-.heading-primary span:first-child {
+.heading-primary span {
   font-size: 4.4rem;
 }
 
@@ -146,16 +150,7 @@ body {
   color: var(--white);
   margin-bottom: 3.2rem;
   letter-spacing: 2.5px;
-}
-
-.mb-bg {
-  margin-bottom: 9.6rem;
-}
-.mb-md {
-  margin-bottom: 3.2rem;
-}
-.margin-bottom-sm {
-  margin-bottom: 1.2rem;
+  line-height: 1.5;
 }
 
 /* ---------- Buttons ---------- */
@@ -253,4 +248,16 @@ body {
 
 .text-white {
   color: var(--white);
+}
+
+/* ---------- Utilities --------- */
+
+.mb-bg {
+  margin-bottom: 9.6rem;
+}
+.mb-md {
+  margin-bottom: 3.2rem;
+}
+.margin-bottom-sm {
+  margin-bottom: 1.2rem;
 }

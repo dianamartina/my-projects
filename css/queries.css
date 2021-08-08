@@ -1,0 +1,34 @@
+/* ---------- Breakpoint 1200px-landscape tablets ---------- */
+
+@media (max-width: 75em) {
+  html {
+    /* we set it to 9px / 16px = 0.5625 = 56.25% */
+    font-size: 56.25%;
+  }
+
+  .grid-2-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6.4rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .heading-primary span:first-child {
+    font-size: 4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .contact-details {
+    margin: 0;
+  }
+}
