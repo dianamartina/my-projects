@@ -103,9 +103,8 @@
   background-size: 100%;
   background-clip: text;
   -webkit-background-clip: text;
-  -moz-background-clip: text;
+  -webkit-text-stroke: transparent;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
   position: relative;
   z-index: 10;
 }
@@ -151,7 +150,10 @@
 /* =========== Section skills ========== */
 
 .section-skills {
-  background-color: var(--primary-light-1);
+  background-image: linear-gradient(
+    var(--primary-light-0),
+    var(--primary-light-1)
+  );
   padding: 9.6rem 0 3.2rem;
 }
 
@@ -285,45 +287,65 @@
 }
 
 .footer-text-box {
-  padding-top: 4.8rem;
+  padding-top: 3.2rem;
 }
 
-.footer-img-box img {
-  width: 80%;
-  justify-self: end;
-  text-align: center;
+.footer-text-box-heading {
+  font-size: 2rem;
 }
 
-.contact-details {
-  background-color: var(--white);
-  border-radius: 20px;
-  padding: 9.6rem 8rem 6.4rem;
-  margin: 0 -3.2rem;
+.footer-comment-box {
+  display: grid;
+  grid-template-columns: 1/3fr 2/3fr;
+  grid-template-rows: 2/3fr 1/3fr;
+  column-gap: 3rem;
+  row-gap: 2.4rem;
+  align-items: center;
 }
 
-.contact-details-content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.footer-comment-img {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2;
+  align-self: start;
+  background-image: url("../images/testimonial-img.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  /* flex: 0 1 auto; */
+  width: 8rem;
+  height: 8rem;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+.footer-comment-text {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
 }
 
-.social-media {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.comment-text {
+  color: var(--white);
+  font-weight: 500;
+  height: 100%;
+  position: relative;
 }
 
-.social-media img {
-  margin-top: -1rem;
-}
-.social-media-description {
-  margin-top: 4rem;
+.comment-text::before {
+  content: "\201D";
+  color: var(--white);
+  font-size: 20rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  position: absolute;
+  top: -10.4rem;
+  left: -3.3rem;
+  opacity: 0.2;
 }
 
 .social-media-icons {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
   list-style: none;
   display: flex;
-  gap: 2.4rem;
+  gap: 3.2rem;
 }
 
 .social-media-link:link,
@@ -339,12 +361,41 @@
 }
 
 .social-media-icon {
-  height: 3.2rem;
+  height: 3.6rem;
+}
+
+.footer-img-box img {
+  width: 70%;
+}
+
+.contact-details {
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 9.6rem 8rem 6.4rem;
+  margin: 0 -3.2rem;
+}
+
+.contact-details-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2/3fr 1/3fr;
+  column-gap: 3rem;
+  row-gap: 2.4rem;
+}
+
+.footer-logo {
+  margin-top: -1rem;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
 }
 
 .quick-links-list {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 2;
+  width: 50%;
   list-style: none;
   font-size: 2rem;
+  font-weight: 400;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -352,7 +403,6 @@
 
 .quick-link-title {
   font-size: 2rem;
-  font-weight: 500;
   color: var(--secondary-dark-1);
   border-bottom: 2px dotted var(--secondary);
   padding-bottom: 1rem;
@@ -373,6 +423,8 @@
 }
 
 .address-phone-email-list {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 2;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -417,7 +469,10 @@
 }
 
 .footer-copyright {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
   font-size: 1.6rem;
+  font-weight: 400;
   margin-top: 7rem;
-  color: rgb(163, 163, 163);
+  color: var(--secondary-light-2);
 }

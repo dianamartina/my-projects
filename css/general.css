@@ -58,7 +58,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1;
   color: var(--grey-dark-2);
   overflow-x: hidden;
@@ -73,7 +73,7 @@ body {
 }
 
 .container {
-  max-width: 128rem;
+  max-width: 120rem;
   margin: 0 auto;
   padding: 0 3.2rem;
 }
@@ -110,18 +110,18 @@ body {
 .heading-secondary::before {
   content: "";
   display: block;
-  width: 7rem;
+  width: 10rem;
   height: 2px;
   background: var(--primary-light-2);
   position: relative;
-  top: 5.2rem;
+  top: 6.4rem;
   left: 50%;
   transform: translateX(-50%);
   transition: all 0.3s;
 }
 
 .heading-secondary:hover::before {
-  width: 20rem;
+  width: 40rem;
   cursor: pointer;
 }
 
@@ -136,7 +136,6 @@ body {
   font-family: "Raleway", sans-serif;
   text-align: center;
   font-size: 3.6rem;
-
   font-weight: 600;
   line-height: 1.2;
   color: var(--white);
