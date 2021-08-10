@@ -168,7 +168,7 @@
 
 .skill-icon {
   color: var(--primary-dark-1);
-  background-image: url("../images/back-tool.svg");
+  background-image: url("./images/back-tool.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -198,7 +198,7 @@
   stop-color: var(--primary-light-3);
 }
 
-/* =========== Section projects ========== */
+/* =========== Section projects ==========./
 
 .section-projects {
   padding-top: 9.6rem;
