@@ -6,17 +6,15 @@
     font-size: 56.25%;
   }
 
+  .logo {
+    height: 4.2rem;
+  }
+
   .grid-2-cols {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 6.4rem;
   }
 
   .heading-primary {
-    font-size: 4.4rem;
-  }
-
-  .heading-primary span:first-child {
     font-size: 4rem;
   }
 
@@ -26,5 +24,365 @@
 
   .heading-tertiary {
     font-size: 2.4rem;
+  }
+
+  .hero-area {
+    gap: 8rem;
+  }
+
+  /* .section-hero::after {
+    width: 59vw;
+  } */
+
+  .contact-details {
+    margin: 0;
+  }
+}
+
+/* ---------- Breakpoint 992px-tablets ---------- */
+
+@media (max-width: 57.5em) {
+  html {
+    /* we set it to 8px / 16px = 0.50 = 50% */
+    font-size: 50%;
+  }
+
+  .logo {
+    height: 4rem;
+  }
+
+  /* Navigation */
+
+  .main-nav {
+    background-color: var(--primary-dark-1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* ----- Hide navigation ----- */
+
+    /* --- Doesn't allows any transitions at all */
+    /* display: none; */
+
+    /* --- Another way to hide an element without display, to use transition */
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+}
+
+/* ---------- Breakpoint 900px-tablets ---------- */
+
+@media (max-width: 56.25em) {
+  .grid-2-cols {
+    grid-template-columns: 1fr;
+    row-gap: 9.6rem;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 1.2rem 2rem;
+  }
+
+  .hero-area {
+    gap: 6.4rem;
+  }
+
+  /* .section-hero::after {
+    width: 62vw;
+  } */
+
+  .section-about-me {
+    padding: 8rem 3.2rem;
+  }
+
+  .about-me-img-box {
+    order: 1;
+    justify-self: center;
+    width: 60%;
+  }
+
+  .about-me-text {
+    order: 2;
+  }
+
+  .section-skills {
+    padding: 8rem 0 3.2rem;
+  }
+
+  .section-projects {
+    padding-top: 8rem;
+  }
+
+  .project-img-box {
+    width: 60%;
+    justify-self: center;
+  }
+
+  .project-even .project-img-box {
+    order: 2;
+  }
+
+  .project-even .project-text-box {
+    order: 1;
+  }
+
+  .project-odd,
+  .project-even {
+    padding: 6.4rem 0;
+  }
+
+  .footer {
+    padding: 8rem 0 3.2rem;
+  }
+
+  .social-media-info {
+    gap: 4.8rem;
+  }
+
+  .footer-img-box img {
+    width: 100%;
+  }
+
+  .contact-details-content {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4.8rem;
+  }
+
+  .quick-links-list {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+    flex-direction: row;
+  }
+
+  .address-phone-email-list {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .footer-copyright {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+    margin-top: 3.6rem;
+  }
+}
+
+/* ---------- Breakpoint 768px-smaller tablets ---------- */
+
+@media (max-width: 48em) {
+  .grid-2-cols {
+    row-gap: 6.4rem;
+  }
+
+  .header {
+    background-color: var(--white);
+  }
+
+  .hero-area {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .hero-img-box {
+    width: 100%;
+    align-self: center;
+    background-color: var(--white);
+    padding-top: 3.6rem;
+  }
+
+  .hero-image {
+    display: block;
+    width: 60%;
+  }
+
+  .hero-text {
+    padding: 0 3.2rem 8rem;
+  }
+
+  .about-me-img-box {
+    width: 80%;
+  }
+  .project-img-box {
+    width: 80%;
+    justify-self: center;
+  }
+
+  .social-media-info {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-img-box {
+    order: 1;
+    width: 50%;
+    justify-self: center;
+  }
+
+  .footer-text-box {
+    order: 2;
+    width: 50rem;
+    justify-self: center;
+  }
+
+  .contact-details {
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 4.8rem 3.2rem;
+  }
+
+  .contact-details-content {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-logo {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .address-phone-email-list {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+
+  .quick-links-list {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+  }
+
+  .footer-copyright {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+  }
+
+  .footer-logo {
+    margin-top: 0;
+  }
+}
+
+/* ---------- Breakpoint 576px- big phones ---------- */
+@media (max-width: 36em) {
+  .container {
+    padding: 8rem 2.4rem;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 1.4rem 2rem;
+  }
+
+  .heading-primary {
+    font-size: 3.6rem;
+  }
+
+  .hero-text-name {
+    height: 5.6rem;
+    /* padding: 1rem 2rem; */
+    margin-bottom: -0.2rem;
+  }
+  .hero-text-job {
+    margin-left: 2rem;
+    padding: 0.1rem 1.6rem;
+  }
+
+  .project-sources {
+    margin-top: 6.4rem;
+    gap: 2.4rem;
+  }
+
+  .project-img-box {
+    width: 100%;
+  }
+
+  .footer {
+    padding: 8rem 0 0;
+  }
+
+  .footer .container {
+    padding: 0;
+  }
+
+  .contact-details {
+    border-radius: 0;
+  }
+
+  .quick-links-list {
+    gap: 1.5rem;
+  }
+
+  .quick-link-title {
+    display: none;
+  }
+  .footer-copyright {
+    justify-self: center;
+  }
+
+  .footer-text-box {
+    width: 90%;
+  }
+
+  .footer-img-box {
+    width: 65%;
+  }
+}
+
+/* ---------- Breakpoint 360px-  phones ---------- */
+@media (max-width: 22.5em) {
+  .heading-primary {
+    font-size: 3.4rem;
+  }
+
+  .hero-text {
+    padding: 0 1.6rem 8rem;
+  }
+
+  .hero-text-name {
+    height: 5.4rem;
+    /* padding: 1rem 2rem; */
+    margin-bottom: -0.2rem;
+  }
+
+  .hero-text-job {
+    margin-left: 0;
+    /* padding: 0.1rem 1.6rem; */
+  }
+
+  .project-sources {
+    margin-top: 4.8rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-details {
+    padding: 4.8rem 1.6rem;
+  }
+
+  .footer-comment-img {
+    width: 64px;
+    height: 64px;
+    border: 4px solid white;
+  }
+
+  .email-link,
+  .address {
+    font-size: 1.85rem;
   }
 }

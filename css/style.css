@@ -8,13 +8,13 @@
   background-image: linear-gradient(
     to bottom right,
     var(--white),
-    var(--primary-dark-1)
+    var(--primary-light-2)
   );
-  height: 100vh;
+  /* height: 100vh; */
   position: relative;
 }
 
-.section-hero::after {
+/* .section-hero::after {
   content: "";
   display: block;
   position: absolute;
@@ -25,8 +25,8 @@
   background-size: cover;
   z-index: 1;
   width: 56vw;
-  height: 100vh;
-}
+  
+} */
 
 .header {
   height: 8rem;
@@ -54,9 +54,9 @@
 .main-nav-link:visited {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.8rem;
-  color: var(--white);
+  color: var(--secondary-dark-1);
   transition: all 0.3s;
 }
 
@@ -68,26 +68,31 @@
 /* ---------- Hero area --------- */
 
 .hero-area {
-  height: calc(100vh - 8rem);
-  max-width: 128rem;
+  /* height: calc(100vh - 8rem); */
+  max-width: 130rem;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12.8rem;
 }
 
 .hero-img-box {
-  z-index: 3;
+  width: 100%;
+  align-self: end;
 }
+
 .hero-image {
-  max-width: 50%;
-  max-height: calc(100vh - 12rem);
-  position: absolute;
-  left: 0;
-  bottom: 0;
+  max-width: 90%;
+  /* max-height: calc(100vh - 12rem); */
 }
+
 .hero-text {
+  max-height: calc(100vh - 8rem);
+  width: 100%;
   align-self: center;
   justify-self: end;
   z-index: 3;
-  margin-bottom: 12.8rem;
+  padding-bottom: 10%;
   padding: 0 3.2rem;
 }
 
@@ -96,6 +101,7 @@
   background-color: var(--white);
   color: var(--secondary-dark-2);
   padding: 1rem 2rem;
+  margin-bottom: -0.6rem;
   font-weight: 500;
 }
 
@@ -105,8 +111,7 @@
   color: var(--secondary-dark-2);
   white-space: nowrap;
   padding: 0.1rem 2rem;
-  margin-left: 2rem;
-  margin-top: -1rem;
+  margin-left: 4rem;
   font-weight: 500;
 }
 
@@ -269,6 +274,12 @@
   background-image: linear-gradient(var(--primary), var(--primary-light-1));
 }
 
+.social-media-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8rem;
+}
+
 .footer-text-box {
   padding-top: 3.2rem;
 }
@@ -290,15 +301,12 @@
   grid-column: 1 / span 1;
   grid-row: 1 / span 2;
   align-self: start;
-  background-image: url("../images/testimonial-img.png");
-  background-repeat: no-repeat;
-  background-position: top;
-  /* flex: 0 1 auto; */
-  width: 8rem;
-  height: 8rem;
+  width: 70px;
+  height: 70px;
   border: 5px solid white;
   border-radius: 50%;
 }
+
 .footer-comment-text {
   grid-column: 2 / span 1;
   grid-row: 1 / span 1;
@@ -362,7 +370,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 2/3fr 1/3fr;
-  column-gap: 3rem;
+  column-gap: 4.8rem;
   row-gap: 2.4rem;
 }
 
@@ -375,7 +383,7 @@
 .quick-links-list {
   grid-column: 2 / span 1;
   grid-row: 1 / span 2;
-  width: 50%;
+
   list-style: none;
   font-size: 2rem;
   font-weight: 400;
