@@ -23,7 +23,7 @@
   }
 
   .heading-tertiary {
-    font-size: 2.4rem;
+    font-size: 3rem;
   }
 
   .hero-area {
@@ -98,7 +98,7 @@
 
   .main-nav-list {
     flex-direction: column;
-    gap: 3.6rem;
+    gap: 3.2rem;
   }
 
   .main-nav-link:link,
