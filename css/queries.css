@@ -98,16 +98,16 @@
 
   .main-nav-list {
     flex-direction: column;
-    gap: 4.8rem;
+    gap: 3.6rem;
   }
 
   .main-nav-link:link,
   .main-nav-link:visited {
-    font-size: 3rem;
+    font-size: 2.6rem;
   }
 
   .main-nav-list .btn-outline-ter-sm {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
   }
 
   .nav-open .main-nav {
@@ -254,7 +254,7 @@
   }
 
   .hero-image {
-    width: 70%;
+    max-width: 70%;
   }
 
   .hero-text {
@@ -337,7 +337,7 @@
   }
 
   .hero-image {
-    width: 100%;
+    max-width: 100%;
   }
 
   .hero-text-name {
@@ -419,7 +419,7 @@
   }
 
   .hero-text-job {
-    margin-left: 0;
+    /* margin-left: 0; */
     /* padding: 0.1rem 1.6rem; */
   }
 
