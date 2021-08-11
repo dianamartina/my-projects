@@ -10,7 +10,8 @@
     var(--white),
     var(--primary-light-2)
   );
-  /* height: 100vh; */
+  height: 100vh;
+  width: 100%;
   position: relative;
 }
 
@@ -68,7 +69,8 @@
 /* ---------- Hero area --------- */
 
 .hero-area {
-  /* height: calc(100vh - 8rem); */
+  height: calc(100vh - 8rem);
+  /* height: 100%; */
   max-width: 130rem;
   margin: 0 auto;
   display: grid;
@@ -82,16 +84,18 @@
 }
 
 .hero-image {
-  max-width: 90%;
-  /* max-height: calc(100vh - 12rem); */
+  width: 100%;
+  padding-top: 3rem;
+  /* max-height: calc(100vh - 8rem); */
 }
 
 .hero-text {
-  max-height: calc(100vh - 8rem);
+  /* max-height: calc(100vh - 8rem); */
   width: 100%;
   align-self: center;
   justify-self: end;
-  z-index: 3;
+  /* z-index: 3; */
+  /* display: block; */
   padding-bottom: 10%;
   padding: 0 3.2rem;
 }

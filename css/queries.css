@@ -193,25 +193,31 @@
     row-gap: 6.4rem;
   }
 
+  .section-hero {
+    height: 100%;
+    width: 100%;
+  }
+
   .header {
     background-color: var(--white);
   }
 
   .hero-area {
+    height: 100%;
     grid-template-columns: 1fr;
-    justify-items: center;
+    /* justify-items: center; */
   }
 
   .hero-img-box {
-    width: 100%;
+    /* width: 100%; */
     align-self: center;
     background-color: var(--white);
     padding-top: 3.6rem;
+    /* height: calc(100vh - 8rem); */
   }
 
   .hero-image {
-    display: block;
-    width: 60%;
+    width: 70%;
   }
 
   .hero-text {
@@ -293,11 +299,16 @@
     font-size: 3.6rem;
   }
 
+  .hero-image {
+    width: 100%;
+  }
+
   .hero-text-name {
     height: 5.6rem;
     /* padding: 1rem 2rem; */
     margin-bottom: -0.2rem;
   }
+
   .hero-text-job {
     margin-left: 2rem;
     padding: 0.1rem 1.6rem;
