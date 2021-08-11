@@ -79,14 +79,16 @@
 }
 
 .hero-img-box {
-  width: 100%;
+  max-width: 100%;
   align-self: end;
+  /* max-height: calc(100vh - 8rem); */
 }
 
 .hero-image {
   width: 100%;
-  padding-top: 3rem;
-  /* max-height: calc(100vh - 8rem); */
+  height: 100%;
+  /* padding-top: 3rem; */
+  max-height: calc(100vh - 8rem);
 }
 
 .hero-text {
