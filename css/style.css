@@ -34,7 +34,7 @@
   display: flex;
   align-items: center;
   padding: 0 3.2rem;
-  position: relative;
+  position: relative; /* for the menu*/
   z-index: 2;
 }
 
@@ -59,12 +59,33 @@
   font-size: 1.8rem;
   color: var(--secondary-dark-1);
   transition: all 0.3s;
+  padding: 20px 0;
 }
 
-/* .main-nav-link:hover,
+.main-nav-link:hover,
 .main-nav-link:active {
-  color: var(--primary-color);
-} */
+  color: var(--tertiary-dark-1);
+}
+
+/* ---------- Navigation mobile ---------- */
+
+.btn-mobile-nav {
+  border: none;
+  margin-left: auto;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.4rem;
+  width: 4.4rem;
+}
+
+/* we don't display the close button */
+.icon-mobile-nav[name="close-btn"] {
+  display: none;
+}
 
 /* ---------- Hero area --------- */
 
@@ -86,7 +107,7 @@
 
 .hero-image {
   max-width: 100%;
-
+  display: block;
   /* padding-top: 3rem; */
   max-height: calc(100vh - 8rem);
 }
@@ -166,15 +187,15 @@
 
 .skills-top-heading span {
   display: inline-block;
-  background-color: var(--tertiary-light-1);
+  background-color: var(--tertiary-light-2);
   border-radius: 1px;
-  padding: 0.6rem 1rem;
+  padding: 0.6rem 2rem;
   letter-spacing: 4px;
 }
 
 .skill-icon {
   color: var(--primary-dark-1);
-  background-image: url("./images/back-tool.svg");
+  background-image: url("../images/back-tool.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -204,7 +225,7 @@
   stop-color: var(--primary-light-3);
 }
 
-/* =========== Section projects ==========./
+/* =========== Section projects ==========./ */
 
 .section-projects {
   padding-top: 9.6rem;
@@ -343,18 +364,20 @@
   list-style: none;
   display: flex;
   gap: 3.2rem;
+  z-index: 5;
 }
 
 .social-media-link:link,
 .social-media-link:visited {
   text-decoration: none;
   display: block;
-  fill: var(--secondary-dark-1);
+  fill: var(--secondary-dark-2);
+  transition: all 0.5s;
 }
 
 .social-media-link:hover,
 .social-media-link:active {
-  fill: var(--secondary-dark-2);
+  fill: var(--white);
 }
 
 .social-media-icon {
