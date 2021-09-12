@@ -38,3 +38,21 @@ allLinksNav.forEach(function (link) {
     }
   });
 });
+
+// --------- Extend about me section ---------
+
+const btnMoreAbout = document.getElementById("btn-more-about");
+const btnLessAbout = document.getElementById("btn-less-about");
+const extendAbout = document.querySelector(".extend-about-me");
+
+btnMoreAbout.addEventListener("click", function () {
+  extendAbout.style.display = "block";
+  btnMoreAbout.style.display = " none";
+  btnLessAbout.style.display = " block";
+});
+
+btnLessAbout.addEventListener("click", function () {
+  extendAbout.style.display = "none";
+  btnMoreAbout.style.display = " block";
+  btnLessAbout.style.display = " none";
+});

@@ -157,7 +157,17 @@
 .about-me-image {
   width: 100%;
 }
+.about-me-text {
+  float: right;
+}
 
+.extend-about-me {
+  display: none;
+}
+
+#btn-less-about {
+  display: none;
+}
 /* =========== Section skills ========== */
 
 .section-skills {

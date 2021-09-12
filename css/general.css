@@ -163,6 +163,10 @@ body {
   border: none;
   cursor: pointer;
 }
+.btn-small {
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+}
 
 .btn-full-sec:link,
 .btn-full-sec:visited {
@@ -208,11 +212,13 @@ body {
   box-shadow: inset 0 0 0 1px var(--tertiary); /* creates a border*/
 }
 
+.btn-outline-pri,
 .btn-outline-pri:link,
 .btn-outline-pri:visited {
   color: var(--primary-dark-2);
   box-shadow: inset 0 0 0 1px var(--primary); /* creates a border*/
   transition: all 0.3s;
+  background-color: transparent;
 }
 
 .btn-outline-pri:hover,
