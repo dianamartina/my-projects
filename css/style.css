@@ -205,6 +205,11 @@
   width: 13rem;
   height: 14rem;
   padding: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.skill-icon:hover {
+  transform: scale(1.2);
 }
 
 .skill-title {
