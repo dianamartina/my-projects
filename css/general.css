@@ -102,15 +102,17 @@ body {
   font-size: 4.4rem;
   font-weight: 500;
   line-height: 1.2;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
 .heading-secondary::before {
   content: "";
-  display: block;
-  width: 10rem;
+  width: 8rem;
   height: 2px;
   background: var(--primary-light-2);
-  position: relative;
+  position: absolute;
   top: 6.4rem;
   left: 50%;
   transform: translateX(-50%);
@@ -118,8 +120,7 @@ body {
 }
 
 .heading-secondary:hover::before {
-  width: 40rem;
-  cursor: pointer;
+  width: 15rem;
 }
 
 .heading-tertiary {
