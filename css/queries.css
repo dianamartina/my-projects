@@ -171,17 +171,22 @@
   }
 
   .project-img-box {
-    width: 60%;
+    width: 70%;
     justify-self: center;
   }
 
-  .project-even .project-img-box {
+  .project-img-box a {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* .project-even .project-img-box {
     order: 2;
   }
 
   .project-even .project-text-box {
     order: 1;
-  }
+  } */
 
   .project-odd,
   .project-even {
@@ -264,9 +269,9 @@
   .about-me-img-box {
     width: 80%;
   }
+
   .project-img-box {
     width: 80%;
-    justify-self: center;
   }
 
   .social-media-info {
@@ -320,6 +325,14 @@
   }
 }
 
+/* ---------- Breakpoint 600px-smaller tablets ---------- */
+
+@media (max-width: 37.5em) {
+  .project-img-box {
+    width: 90%;
+  }
+}
+
 /* ---------- Breakpoint 576px- big phones ---------- */
 @media (max-width: 36em) {
   .container {
@@ -363,13 +376,11 @@
 
   .project-img-box {
     width: 100%;
-    text-align: center;
   }
 
   .project-img {
-    width: 90%;
+    width: 100%;
   }
-
   .footer {
     padding: 8rem 0 0;
   }
@@ -399,6 +410,17 @@
 
   .footer-img-box {
     width: 65%;
+  }
+}
+
+/* ---------- Breakpoint 480px-  big-phones ---------- */
+@media (max-width: 30em) {
+  .project-img-box {
+    background-image: none;
+  }
+
+  .project-img {
+    margin-top: 0;
   }
 }
 

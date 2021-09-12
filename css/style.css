@@ -240,6 +240,14 @@
   background-color: var(--primary-light-0);
 }
 
+.project-even .project-img-box {
+  order: 1;
+}
+
+.project-even .project-text-box {
+  order: 2;
+}
+
 /* .project-text-box {
 } */
 
@@ -284,16 +292,67 @@
 }
 
 .project-img-box {
-  transition: all 0.5s;
-}
-
-.project-img-box:hover {
-  transform: scale(1.05);
+  background-image: url("/images/projects/project-img-back.svg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 100%;
 }
 
 .project-img {
-  width: 100%;
+  width: 75%;
+  height: 85%;
+  min-height: 55rem;
+  margin-top: 9rem;
+  align-self: center;
+  transition: all 2s ease-in;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat no-repeat;
+  position: relative;
 }
+
+.project-img:hover {
+  /* transform: scale(1.05); */
+  background-position: bottom;
+}
+
+/* .project-img:before {
+  content: "";
+  width: 120%;
+  height: 100%;
+  display: block;
+  background-image: url("/images/projects/project-img-back.svg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+ 
+  left: 0rem;
+  top: -5rem;
+  z-index: -1;
+
+} 
+*/
+
+.img-true-delight-full {
+  background-image: url("/images/projects/true-delight-full.png");
+}
+.img-js-projects-full {
+  background-image: url("/images/projects/js-projects-full.png");
+}
+.img-dream-garden-full {
+  background-image: url("/images/projects/dream-garden-full.png");
+}
+.img-amifood-full {
+  background-image: url("/images/projects/amifood-full.png");
+}
+.img-artdesign-full {
+  background-image: url("/images/projects/artdesign-ful.png");
+}
+
+/* .project-img {
+  width: 100%;
+} */
 /* =========== Footer ========== */
 
 .footer {
