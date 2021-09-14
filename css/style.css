@@ -295,6 +295,7 @@
 }
 
 .project-tool span {
+  font-weight: 500;
   color: var(--grey-dark-1);
   font-style: italic;
 }
