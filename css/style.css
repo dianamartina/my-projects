@@ -307,7 +307,7 @@
 }
 
 .project-img-box {
-  background-image: url("/images/projects/project-img-back.svg");
+  background-image: url("../images/projects/project-img-back.svg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -350,19 +350,19 @@
 */
 
 .img-true-delight-full {
-  background-image: url("/images/projects/true-delight-full.png");
+  background-image: url("../images/projects/true-delight-full.png");
 }
 .img-js-projects-full {
-  background-image: url("/images/projects/js-projects-full.png");
+  background-image: url("../images/projects/js-projects-full.png");
 }
 .img-dream-garden-full {
-  background-image: url("/images/projects/dream-garden-full.png");
+  background-image: url("../images/projects/dream-garden-full.png");
 }
 .img-amifood-full {
-  background-image: url("/images/projects/amifood-full.png");
+  background-image: url("../images/projects/amifood-full.png");
 }
 .img-artdesign-full {
-  background-image: url("/images/projects/artdesign-ful.png");
+  background-image: url("../images/projects/artdesign-ful.png");
 }
 
 /* .project-img {
