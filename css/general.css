@@ -110,10 +110,11 @@ body {
 .heading-secondary::before {
   content: "";
   width: 8rem;
-  height: 2px;
-  background: var(--primary-light-2);
+  /* height: 2px; */
+  border-bottom: 2.8px dashed var(--primary-light-2);
+  /* background: var(--primary-light-2); */
   position: absolute;
-  top: 6.4rem;
+  top: 5rem;
   left: 50%;
   transform: translateX(-50%);
   transition: all 0.3s;
@@ -165,7 +166,7 @@ body {
   cursor: pointer;
 }
 .btn-small {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   padding: 1rem 2rem;
 }
 
