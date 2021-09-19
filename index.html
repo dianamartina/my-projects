@@ -6,6 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/queries.css">
@@ -23,9 +32,10 @@
                 <ul class="main-nav-list">
                     <li><a class="main-nav-link" href="#about">about me</a></li>
                     <li><a class="main-nav-link" href="#projects">projects</a></li>
-                    <li><a class="main-nav-link" href="https://github.com/dianamartina" target="_blank">github</a></li>
-                    <li><a class="main-nav-link" href="https://dianamartina.github.io/resources-page/"
-                            target="_blank">my
+                    <li><a class="main-nav-link" href="https://github.com/dianamartina" target="_blank"
+                            rel="noopener noreferrer">github</a></li>
+                    <li><a class="main-nav-link" href="https://dianamartina.github.io/resources-page/" target="_blank"
+                            rel="noopener noreferrer">my
                             resources</a></li>
                     <li><a class="btn btn-outline-ter-sm" href="#contact">contact</a></li>
                 </ul>
@@ -51,7 +61,7 @@
                 <p class="subheading">Let's make the web beautiful and user friendly for everyone!</p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-full-sec">Contact me</a>
-                    <a href="https://github.com/dianamartina/my-projects" target="_blank"
+                    <a href="https://github.com/dianamartina/my-projects" target="_blank" rel="noopener noreferrer"
                         class="btn btn-outline-ter">Source code</a>
                 </div>
             </div>
@@ -63,8 +73,8 @@
         <section class="section-about-me container" id="about">
             <h2 class="heading-secondary mb-bg"> Find more about me</h2>
 
-            <div class="grid-2-cols">
-                <div class="about-me-text">
+            <div class="grid-2-cols about-me-box">
+                <div class="about-me-text fade-in">
                     <p class="text-description">
                         I'm <strong>Diana Martina Seiculescu</strong>, a front-end developer with a civil
                         engineering
@@ -275,233 +285,270 @@
 
         <section class="section-projects " id="projects">
             <h2 class="heading-secondary mb-md"> My creative projects</h2>
-            <div class="project-odd">
+            <!-- True delight project -->
+            <div class="project-position">
                 <div class="container">
                     <div class="grid-2-cols ">
-                        <div class="project-text-box">
-                            <p class="project-top-heading">Latest work</p>
-                            <h3 class="heading-tertiary">True Delight - shop</h3>
-                            <ul class="project-tools">
-                                <li class="project-tool">HTML</li>
-                                <li class="project-tool">CSS</li>
-                                <li class="project-tool">JS</li>
-                                <li class="project-tool">React</li>
-                                <li class="project-tool">Bootstrap</li>
-                                <li class="project-tool"><span>Responsive</span></li>
-                                <li class="project-tool"><span>UI Design</span></li>
-                            </ul>
-                            <p class="text-description">
-                                True Delight it is an online shop for sweets, cakes and chocolate.
+                        <div class="project-slide-in">
+                            <div class="project-text-box ">
+                                <p class="project-top-heading">Latest work</p>
+                                <h3 class="heading-tertiary">True Delight - shop</h3>
+                                <ul class="project-tools">
+                                    <li class="project-tool">HTML</li>
+                                    <li class="project-tool">CSS</li>
+                                    <li class="project-tool">JS</li>
+                                    <li class="project-tool">React</li>
+                                    <li class="project-tool">Bootstrap</li>
+                                    <li class="project-tool"><span>Responsive</span></li>
+                                    <li class="project-tool"><span>UI Design</span></li>
+                                </ul>
+                                <p class="text-description">
+                                    True Delight it is an online shop for sweets, cakes and chocolate.
 
-                                The app is built using ReactJs library, React Router,Redux, Redux Thunk, Firebase and
-                                Bootstrap. The products come from a local JSON file.
-                            </p>
-                            <p class="text-description">
-                                The design is partially inspired from
-                                dolcino.qodeinteractive.com
-                            </p>
-                            <div class="project-sources">
-                                <a href="https://react-true-delight-shop.herokuapp.com/" class="btn btn-full-pri"
-                                    target="_blank">Live
-                                    project</a>
-                                <a href="https://github.com/dianamartina/true-delight-shop" class=" btn btn-outline-pri"
-                                    target="_blank">Source code &rarr;</a>
+                                    The app is built using ReactJs library, React Router,Redux, Redux Thunk, Firebase
+                                    and
+                                    Bootstrap. The products come from a local JSON file.
+                                </p>
+                                <p class="text-description">
+                                    The design is partially inspired from
+                                    dolcino.qodeinteractive.com
+                                </p>
+                                <div class="project-sources">
+                                    <a href="https://react-true-delight-shop.herokuapp.com/" class="btn btn-full-pri"
+                                        target="_blank" rel="noopener noreferrer">Live
+                                        project</a>
+                                    <a href="https://github.com/dianamartina/true-delight-shop"
+                                        class=" btn btn-outline-pri" target="_blank" rel="noopener noreferrer">Source
+                                        code &rarr;</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="project-img-box">
-                            <a href="https://react-true-delight-shop.herokuapp.com/" target="_blank">
-                                <div class="project-img img-true-delight-full"></div>
-                            </a>
+                        <div class="project-slide-in">
+                            <div class="project-img-box ">
+                                <a href="https://react-true-delight-shop.herokuapp.com/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <div class="project-img img-true-delight-full "></div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="project-even">
+            <!-- Java Script project -->
+            <div class="project-position">
                 <div class="container">
                     <div class="grid-2-cols ">
-                        <div class="project-text-box">
-                            <p class="project-top-heading">Latest work</p>
-                            <h3 class="heading-tertiary">JavaScript Projects</h3>
-                            <ul class="project-tools">
-                                <li class="project-tool">HTML</li>
-                                <li class="project-tool">CSS</li>
-                                <li class="project-tool">JS</li>
-                                <li class="project-tool"><span>Responsive</span></li>
-                                <li class="project-tool"><span>UI Design</span></li>
-                            </ul>
-                            <p class="text-description">
-                                Gallery with various fun projects made with vanilla JavaScript, HTML and CSS.
-                            </p>
-                            <p class="text-description">
-                                Some of the projects: Time and date app, Guess Number game with a range between 1 and
-                                20, Sing a song on a small piano, New Year Countdown, How much water did you drink today
-                                app.
-                            </p>
+                        <div class="project-slide-in">
+                            <div class="project-text-box">
+                                <p class="project-top-heading">Latest work</p>
+                                <h3 class="heading-tertiary">JavaScript Projects</h3>
+                                <ul class="project-tools">
+                                    <li class="project-tool">HTML</li>
+                                    <li class="project-tool">CSS</li>
+                                    <li class="project-tool">JS</li>
+                                    <li class="project-tool"><span>Responsive</span></li>
+                                    <li class="project-tool"><span>UI Design</span></li>
+                                </ul>
+                                <p class="text-description">
+                                    Gallery with various fun projects made with vanilla JavaScript, HTML and CSS.
+                                </p>
+                                <p class="text-description">
+                                    Some of the projects: Time and date app, Guess Number game with a range between 1
+                                    and
+                                    20, Sing a song on a small piano, New Year Countdown, How much water did you drink
+                                    today
+                                    app.
+                                </p>
 
-                            <div class="project-sources">
-                                <a href="https://dianamartina.github.io/js-projects/" class="btn btn-full-pri"
-                                    target="_blank">Live project</a>
-                                <a href="https://github.com/dianamartina/js-projects" class=" btn btn-outline-pri"
-                                    target="_blank">Source code &rarr;</a>
+                                <div class="project-sources">
+                                    <a href="https://dianamartina.github.io/js-projects/" class="btn btn-full-pri"
+                                        target="_blank" rel="noopener noreferrer">Live project</a>
+                                    <a href="https://github.com/dianamartina/js-projects" class=" btn btn-outline-pri"
+                                        target="_blank" rel="noopener noreferrer">Source code &rarr;</a>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="project-img-box">
-                            <a href="https://dianamartina.github.io/js-projects/" target="_blank">
-                                <div class="project-img img-js-projects-full"></div>
-                            </a>
+                        <div class="project-slide-in">
+                            <div class="project-img-box">
+                                <a href="https://dianamartina.github.io/js-projects/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <div class="project-img img-js-projects-full"></div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="project-odd">
+            <!-- Dream garden project -->
+            <div class="project-position">
                 <div class="container">
                     <div class="grid-2-cols ">
-                        <div class="project-text-box">
-                            <p class="project-top-heading">Latest work</p>
-                            <h3 class="heading-tertiary">Dream Garden - landingpage</h3>
-                            <ul class="project-tools">
-                                <li class="project-tool">HTML</li>
-                                <li class="project-tool">CSS</li>
-                                <li class="project-tool">SASS</li>
-                                <li class="project-tool">JS</li>
-                                <li class="project-tool"><span>Responsive</span></li>
-                                <li class="project-tool"><span>UI Design</span></li>
-                            </ul>
-                            <p class="text-description">
-                                The project is a responsive modern website for a fictive gardening company, that designs
-                                and delivers services for landscaping. The website uses HTML5(semantic, accessible and
-                                image optimization for different viewports and device pixel ratio ), SASS(with scss
-                                files), and some interactive elements in JavaScript.
-                            </p>
-                            <p class="text-description">
-                                Some modern future used in the project are headings with gradient color, image outline,
-                                rotating cards effect, clip-path background, grid image gallery, custom form and many
-                                others.
-                            </p>
+                        <div class="project-slide-in">
+                            <div class="project-text-box">
+                                <p class="project-top-heading">Latest work</p>
+                                <h3 class="heading-tertiary">Dream Garden - landingpage</h3>
+                                <ul class="project-tools">
+                                    <li class="project-tool">HTML</li>
+                                    <li class="project-tool">CSS</li>
+                                    <li class="project-tool">SASS</li>
+                                    <li class="project-tool">JS</li>
+                                    <li class="project-tool"><span>Responsive</span></li>
+                                    <li class="project-tool"><span>UI Design</span></li>
+                                </ul>
+                                <p class="text-description">
+                                    The project is a responsive modern website for a fictive gardening company, that
+                                    designs
+                                    and delivers services for landscaping. The website uses HTML5(semantic, accessible
+                                    and
+                                    image optimization for different viewports and device pixel ratio ), SASS(with scss
+                                    files), and some interactive elements in JavaScript.
+                                </p>
+                                <p class="text-description">
+                                    Some modern future used in the project are headings with gradient color, image
+                                    outline,
+                                    rotating cards effect, clip-path background, grid image gallery, custom form and
+                                    many
+                                    others.
+                                </p>
 
-                            <p class="text-description">
-                                The icons are SVG type provided from the linea.io library.
-                            </p>
-                            <p class="text-description">
-                                Performance validation (Google Lighthouse) is very good.
-                            </p>
+                                <p class="text-description">
+                                    The icons are SVG type provided from the linea.io library.
+                                </p>
+                                <p class="text-description">
+                                    Performance validation (Google Lighthouse) is very good.
+                                </p>
 
-                            <div class="project-sources">
-                                <a href="https://dianamartina.github.io/dream-garden/" class="btn btn-full-pri"
-                                    target="_blank">Live project</a>
-                                <a href="https://github.com/dianamartina/dream-garden" class=" btn btn-outline-pri"
-                                    target="_blank">Source code &rarr;</a>
+                                <div class="project-sources">
+                                    <a href="https://dianamartina.github.io/dream-garden/" class="btn btn-full-pri"
+                                        target="_blank" rel="noopener noreferrer">Live project</a>
+                                    <a href="https://github.com/dianamartina/dream-garden" class=" btn btn-outline-pri"
+                                        target="_blank" rel="noopener noreferrer">Source code &rarr;</a>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="project-img-box">
-                            <a href="https://dianamartina.github.io/dream-garden/" target="_blank">
-                                <div class="project-img img-dream-garden-full"></div>
-                            </a>
+                        <div class="project-slide-in">
+                            <div class="project-img-box">
+                                <a href="https://dianamartina.github.io/dream-garden/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <div class="project-img img-dream-garden-full"></div>
+                                </a>
+                                </class=>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="project-even">
+            <!-- Amifood project -->
+            <div class="project-position">
                 <div class="container">
                     <div class="grid-2-cols ">
-                        <div class="project-text-box">
-                            <p class="project-top-heading">Latest work</p>
-                            <h3 class="heading-tertiary">Amifood - landingpage</h3>
-                            <ul class="project-tools">
-                                <li class="project-tool">HTML</li>
-                                <li class="project-tool">CSS</li>
-                                <li class="project-tool">JS</li>
-                                <li class="project-tool"><span>Responsive</span></li>
+                        <div class="project-slide-in">
+                            <div class="project-text-box">
+                                <p class="project-top-heading">Latest work</p>
+                                <h3 class="heading-tertiary">Amifood - landingpage</h3>
+                                <ul class="project-tools">
+                                    <li class="project-tool">HTML</li>
+                                    <li class="project-tool">CSS</li>
+                                    <li class="project-tool">JS</li>
+                                    <li class="project-tool"><span>Responsive</span></li>
 
-                            </ul>
-                            <p class="text-description">
-                                This project it's a responsive modern website for a fictive food delivery company, that
-                                create and deliver customer healthy meal plans. The marketing website uses vanilla
-                                HTML5(semantic and accessible), CSS3(including flexbox and grid), and some interactive
-                                elements in JavaScript.
-                            </p>
-                            <p class="text-description">
-                                Illustrations used for this design are SVG type.
-                                Part of the icons are SVG and others are imported from Ionicons.
-                            </p>
+                                </ul>
+                                <p class="text-description">
+                                    This project it's a responsive modern website for a fictive food delivery company,
+                                    that
+                                    create and deliver customer healthy meal plans. The marketing website uses vanilla
+                                    HTML5(semantic and accessible), CSS3(including flexbox and grid), and some
+                                    interactive
+                                    elements in JavaScript.
+                                </p>
+                                <p class="text-description">
+                                    Illustrations used for this design are SVG type.
+                                    Part of the icons are SVG and others are imported from Ionicons.
+                                </p>
 
-                            <p class="text-description">
-                                Performance validation (Google Lighthouse) it is almost 100.
-                            </p>
-                            <p class="text-description">
-                                The UI design is partially inspired by another source.
-                            </p>
-                            <div class="project-sources">
-                                <a href="https://dianamartina.github.io/amifood/" class="btn btn-full-pri"
-                                    target="_blank">Live
-                                    project</a>
-                                <a href="https://github.com/dianamartina/amifood" class=" btn btn-outline-pri"
-                                    target="_blank">Source code &rarr;</a>
+                                <p class="text-description">
+                                    Performance validation (Google Lighthouse) it is almost 100.
+                                </p>
+                                <p class="text-description">
+                                    The UI design is partially inspired by another source.
+                                </p>
+                                <div class="project-sources">
+                                    <a href="https://dianamartina.github.io/amifood/" class="btn btn-full-pri"
+                                        target="_blank" rel="noopener noreferrer">Live
+                                        project</a>
+                                    <a href="https://github.com/dianamartina/amifood" class=" btn btn-outline-pri"
+                                        target="_blank" rel="noopener noreferrer">Source code &rarr;</a>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="project-img-box">
-                            <a href="https://dianamartina.github.io/amifood/" target="_blank">
-                                <div class="project-img img-amifood-full"></div>
-                            </a>
+                        <div class="project-slide-in">
+                            <div class="project-img-box">
+                                <a href="https://dianamartina.github.io/amifood/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <div class="project-img img-amifood-full"></div>
+                                </a>
+                            </div>
                         </div>
-
                     </div>
-
                 </div>
             </div>
-            <div class="project-odd">
+            <!-- ArtDesign project -->
+            <div class="project-position">
                 <div class="container">
                     <div class="grid-2-cols ">
-                        <div class="project-text-box">
-                            <p class="project-top-heading">Latest work</p>
-                            <h3 class="heading-tertiary">ArtDesign - landingpage</h3>
-                            <ul class="project-tools">
-                                <li class="project-tool">HTML</li>
-                                <li class="project-tool">CSS</li>
-                                <li class="project-tool">JS/JQuery</li>
-                                <li class="project-tool">Bootstrap</li>
-                                <li class="project-tool"><span>Responsive</span></li>
-                                <li class="project-tool"><span>UI Design</span></li>
-                            </ul>
-                            <p class="text-description">
-                                A responsive modern website for an interior design company.
-                            </p>
-                            <p class="text-description">
+                        <div class="project-slide-in">
+                            <div class="project-text-box">
+                                <p class="project-top-heading">Latest work</p>
+                                <h3 class="heading-tertiary">ArtDesign - landingpage</h3>
+                                <ul class="project-tools">
+                                    <li class="project-tool">HTML</li>
+                                    <li class="project-tool">CSS</li>
+                                    <li class="project-tool">JS/JQuery</li>
+                                    <li class="project-tool">Bootstrap</li>
+                                    <li class="project-tool"><span>Responsive</span></li>
+                                    <li class="project-tool"><span>UI Design</span></li>
+                                </ul>
+                                <p class="text-description">
+                                    A responsive modern website for an interior design company.
+                                </p>
+                                <p class="text-description">
 
-                                The webpage is built with semantic HTML5 and Bootstrap 5.
-                            </p>
-                            <p class="text-description">
-                                The first part of the page is
-                                a full height carousel hero image from the Bootstrap 5 gallery.
+                                    The webpage is built with semantic HTML5 and Bootstrap 5.
+                                </p>
+                                <p class="text-description">
+                                    The first part of the page is
+                                    a full height carousel hero image from the Bootstrap 5 gallery.
 
-                            </p>
-                            <p class="text-description">
-                                In the main part the icons are part of the Font Awesome gallery, all the transition
-                                effects are implemented with the Animated On Scroll Library (AOS),
-                                and the hover one’s with CSS3.
+                                </p>
+                                <p class="text-description">
+                                    In the main part the icons are part of the Font Awesome gallery, all the transition
+                                    effects are implemented with the Animated On Scroll Library (AOS),
+                                    and the hover one’s with CSS3.
 
-                            </p>
-                            <p class="text-description">
-                                From the tablet size, the navigation menu switches to a hamburger icon from the Tasty
-                                CSS-animated hamburgers library.
-                            </p>
+                                </p>
+                                <p class="text-description">
+                                    From the tablet size, the navigation menu switches to a hamburger icon from the
+                                    Tasty
+                                    CSS-animated hamburgers library.
+                                </p>
 
-                            <div class="project-sources">
-                                <a href="https://dianamartina.github.io/artdesign/" class="btn btn-full-pri"
-                                    target="_blank">Live project</a>
-                                <a href="https://github.com/dianamartina/artdesign" class=" btn btn-outline-pri"
-                                    target="_blank">Source code &rarr;</a>
+                                <div class="project-sources">
+                                    <a href="https://dianamartina.github.io/artdesign/" class="btn btn-full-pri"
+                                        target="_blank" rel="noopener noreferrer">Live project</a>
+                                    <a href="https://github.com/dianamartina/artdesign" class=" btn btn-outline-pri"
+                                        target="_blank" rel="noopener noreferrer">Source code &rarr;</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-slide-in">
+                            <div class="project-img-box">
+                                <a href="https://dianamartina.github.io/artdesign/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <div class="project-img img-artdesign-full "></div>
+                                </a>
                             </div>
                         </div>
 
-                        <div class="project-img-box">
-                            <a href="https://dianamartina.github.io/artdesign/" target="_blank">
-                                <div class="project-img img-artdesign-full "></div>
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -528,7 +575,7 @@
                         <ul class="social-media-icons">
                             <li>
                                 <a href="www.linkedin.com/in/diana-martina-seiculescu" target="_blank"
-                                    class="social-media-link">
+                                    rel="noopener noreferrer" class="social-media-link">
                                     <!-- linkedIn icon -->
                                     <svg class="social-media-icon" viewBox=" 0 0 31 31"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -538,7 +585,8 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="https://github.com/dianamartina" target="_blank" class="social-media-link">
+                                <a href="https://github.com/dianamartina" target="_blank" rel="noopener noreferrer"
+                                    class="social-media-link">
                                     <!-- github icon -->
                                     <svg class="social-media-icon" viewBox=" 0 0 33 31"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -548,7 +596,8 @@
                                 </a>
                             </li>
 
-                            <li><a href="https://twitter.com/DianaMartina18" target="_blank" class="social-media-link">
+                            <li><a href="https://twitter.com/DianaMartina18" target="_blank" rel="noopener noreferrer"
+                                    class="social-media-link">
                                     <!-- twitter -->
                                     <svg class="social-media-icon" viewBox=" 0 0 31 31"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -577,8 +626,8 @@
                         <li><span class="quick-link-title">Quick links</span></li>
                         <li><a class="quick-link" href="#about">about me</a></li>
                         <li><a class="quick-link" href="#projects">projects</a></li>
-                        <li><a class="quick-link" href="https://dianamartina.github.io/resources-page/"
-                                target="_blank">my resources</a>
+                        <li><a class="quick-link" href="https://dianamartina.github.io/resources-page/" target="_blank"
+                                rel="noopener noreferrer">my resources</a>
                         </li>
                     </ul>
 

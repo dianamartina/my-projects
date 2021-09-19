@@ -31,11 +31,21 @@
 
 .header {
   height: 8rem;
+  width: 100%;
   display: flex;
   align-items: center;
   padding: 0 3.2rem;
-  position: relative; /* for the menu*/
-  z-index: 2;
+  position: fixed; /* for the menu*/
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+}
+
+.header-scrolled {
+  background-color: var(--white);
+  opacity: 0.95;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* ---------- Navigation ---------- */
@@ -90,8 +100,7 @@
 /* ---------- Hero area --------- */
 
 .hero-area {
-  height: calc(100vh - 8rem);
-  /* height: 100%; */
+  height: 100vh;
   max-width: 130rem;
   margin: 0 auto;
   display: grid;
@@ -353,15 +362,16 @@
   background-color: var(--primary-light-0);
 }
 
-.project-even .project-img-box {
+.project-even .project-slide-in:nth-child(2) {
   order: 1;
 }
 
-.project-even .project-text-box {
+.project-even .project-slide-in:first-child {
   order: 2;
 }
 
 /* .project-text-box {
+  
 } */
 
 .project-top-heading {
@@ -406,12 +416,20 @@
   gap: 3.2rem;
 }
 
-.project-img-box {
+.project-position.project-odd,
+.project-position.project-even {
   background-image: url("../images/projects/project-img-back.svg");
-  background-size: cover;
-  background-position: top;
+  background-size: 50%;
   background-repeat: no-repeat;
   width: 100%;
+}
+
+.project-position.project-odd {
+  background-position: top 8rem right;
+}
+
+.project-position.project-even {
+  background-position: top 8rem left;
 }
 
 .project-img {
@@ -420,34 +438,16 @@
   min-height: 55rem;
   margin-top: 9rem;
   align-self: center;
-  transition: all 2s ease-in;
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat no-repeat;
   position: relative;
+  transition: background-position 2s ease-in;
 }
 
 .project-img:hover {
-  /* transform: scale(1.05); */
   background-position: bottom;
 }
-
-/* .project-img:before {
-  content: "";
-  width: 120%;
-  height: 100%;
-  display: block;
-  background-image: url("/images/projects/project-img-back.svg");
-  background-size: cover;
-  background-position: top;
-  position: relative;
- 
-  left: 0rem;
-  top: -5rem;
-  z-index: -1;
-
-} 
-*/
 
 .img-true-delight-full {
   background-image: url("../images/projects/true-delight-full.png");
@@ -465,9 +465,6 @@
   background-image: url("../images/projects/artdesign-ful.png");
 }
 
-/* .project-img {
-  width: 100%;
-} */
 /* =========== Footer ========== */
 
 .footer {

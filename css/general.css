@@ -267,3 +267,31 @@ body {
 .margin-bottom-sm {
   margin-bottom: 1.2rem;
 }
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.55s ease-in;
+}
+.fade-in.appear {
+  opacity: 1;
+}
+
+.from-right {
+  transform: translateX(50%);
+}
+
+.from-left {
+  transform: translateX(-50%);
+}
+
+.from-right,
+.from-left {
+  opacity: 0;
+  transition: opacity 2s, transform 0.7s;
+}
+
+.from-right.appear,
+.from-left.appear {
+  transform: translateX(0);
+  opacity: 1;
+}
