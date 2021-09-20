@@ -180,6 +180,10 @@
     justify-content: center;
   }
 
+  .project-img {
+    margin-top: 4rem;
+  }
+
   .project-position .project-slide-in:last-child {
     display: flex;
     justify-content: center;
@@ -289,6 +293,10 @@
     width: 80%;
   }
 
+  .project-img {
+    margin-top: 2rem;
+  }
+
   .social-media-info {
     grid-template-columns: 1fr;
   }
@@ -395,7 +403,9 @@
 
   .project-img {
     width: 100%;
+    margin-top: 0;
   }
+
   .footer {
     padding: 8rem 0 0;
   }
