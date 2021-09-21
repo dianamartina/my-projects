@@ -15,20 +15,6 @@
   position: relative;
 }
 
-/* .section-hero::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-image: url("../images/back-color-hero-img.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 1;
-  width: 56vw;
-  
-} */
-
 .header {
   height: 8rem;
   width: 100%;
@@ -419,50 +405,33 @@
 .project-position.project-odd,
 .project-position.project-even {
   background-image: url("../images/projects/project-img-back.svg");
-  background-size: 50%;
+  background-size: 35%;
   background-repeat: no-repeat;
   width: 100%;
 }
 
 .project-position.project-odd {
-  background-position: top 8rem right;
+  background-position: top 8rem right 10vw;
 }
 
 .project-position.project-even {
-  background-position: top 8rem left;
+  background-position: top 8rem left 10vw;
 }
 
 .project-img {
-  width: 75%;
-  height: 85%;
+  width: 85%;
+  height: 55rem;
   min-height: 55rem;
   margin-top: 9rem;
   align-self: center;
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat no-repeat;
+  object-fit: cover;
+  object-position: top;
   position: relative;
-  transition: background-position 2s ease-in;
+  transition: object-position 3s ease-in-out;
 }
 
 .project-img:hover {
-  background-position: bottom;
-}
-
-.img-true-delight-full {
-  background-image: url("../images/projects/true-delight-full.png");
-}
-.img-js-projects-full {
-  background-image: url("../images/projects/js-projects-full.png");
-}
-.img-dream-garden-full {
-  background-image: url("../images/projects/dream-garden-full.png");
-}
-.img-amifood-full {
-  background-image: url("../images/projects/amifood-full.png");
-}
-.img-artdesign-full {
-  background-image: url("../images/projects/artdesign-ful.png");
+  object-position: bottom;
 }
 
 /* =========== Footer ========== */
