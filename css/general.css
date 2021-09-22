@@ -74,7 +74,7 @@ ul {
 .grid-2-cols {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 14rem;
+  gap: 12.8rem;
 }
 
 .container {

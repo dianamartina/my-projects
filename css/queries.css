@@ -1,12 +1,12 @@
 /* ---------- Breakpoint 1400px-landscape tablets ---------- */
 @media (max-width: 87.5em) {
+  .grid-2-cols {
+    gap: 12.8rem;
+  }
+
   .project-position.project-odd,
   .project-position.project-even {
     background-size: 40%;
-  }
-
-  .grid-2-cols {
-    gap: 8rem;
   }
 
   .project-position.project-odd {
@@ -17,6 +17,7 @@
     background-position: top 8rem left;
   }
 }
+
 /* ---------- Breakpoint 1200px-landscape tablets ---------- */
 
 @media (max-width: 75em) {
@@ -219,7 +220,8 @@
 
   .project-position.project-odd,
   .project-position.project-even {
-    background-position: bottom 20rem left 30%;
+    background-position: bottom 15rem left 30%;
+    background-size: 60%;
   }
 
   .footer {
@@ -316,6 +318,12 @@
     margin-top: 2rem;
   }
 
+  .project-position.project-odd,
+  .project-position.project-even {
+    background-size: 70%;
+    background-position: bottom 8rem left 30%;
+  }
+
   .social-media-info {
     grid-template-columns: 1fr;
   }
@@ -373,6 +381,11 @@
   .project-img-box {
     width: 90%;
   }
+  .project-position.project-odd,
+  .project-position.project-even {
+    background-size: 80%;
+    background-position: bottom 12rem left 30%;
+  }
 }
 
 /* ---------- Breakpoint 576px- big phones ---------- */
@@ -414,6 +427,12 @@
   .project-even .container,
   .project-odd .container {
     padding: 0 2.4rem;
+  }
+
+  .project-position.project-odd,
+  .project-position.project-even {
+    background-size: 90%;
+    background-position: bottom 8rem left 30%;
   }
 
   .project-img-box {
@@ -466,6 +485,12 @@
   .project-even .container,
   .project-odd .container {
     padding: 0 1.8rem;
+  }
+
+  .project-position.project-odd,
+  .project-position.project-even {
+    background-size: 100%;
+    background-position: bottom 3rem left 30%;
   }
 }
 

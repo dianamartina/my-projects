@@ -2,7 +2,7 @@
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
 const heroAreaEl = document.querySelector(".hero-area");
-const allLinksNavEl = document.querySelectorAll(".main-nav-link");
+const allLinksNavEl = document.querySelectorAll(".nav-link");
 const btnMoreAboutEl = document.getElementById("btn-more-about");
 
 // About us elements
@@ -22,7 +22,7 @@ btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
 
-// --------- Navigation onScroll ---------
+// --------- Navigation menu onScroll ---------
 
 const sectionOneOptions = {
   rootMargin: "-400px 0px 0px 0px ",
@@ -39,6 +39,7 @@ const sectionOneObserver = new IntersectionObserver(function (entries) {
 }, sectionOneOptions);
 
 sectionOneObserver.observe(heroAreaEl);
+
 // --------- Closing menu ---------
 
 allLinksNavEl.forEach(function (link) {
@@ -63,7 +64,7 @@ allLinksNavEl.forEach(function (link) {
 
     //Close mobile navigation
 
-    if (link.classList.contains("main-nav-link")) {
+    if (link.classList.contains("nav-link")) {
       headerEl.classList.toggle("nav-open");
     }
   });

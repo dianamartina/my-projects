@@ -401,7 +401,12 @@
   align-items: center;
   gap: 3.2rem;
 }
+.project-position {
+  max-width: 140rem;
+  margin: 0 auto;
+}
 
+/* we select the position with the side, to stay on the same place for the mobile version */
 .project-position.project-odd,
 .project-position.project-even {
   background-image: url("../images/projects/project-img-back.svg");
@@ -411,11 +416,11 @@
 }
 
 .project-position.project-odd {
-  background-position: top 8rem right 10vw;
+  background-position: top 8rem right 5vw;
 }
 
 .project-position.project-even {
-  background-position: top 8rem left 10vw;
+  background-position: top 8rem left 2vw;
 }
 
 .project-img {
