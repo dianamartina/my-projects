@@ -257,6 +257,7 @@
 
 .about-me-image {
   width: 100%;
+  height: auto;
 }
 .about-me-text {
   float: right;

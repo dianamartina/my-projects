@@ -511,6 +511,9 @@
 
 /* ---------- Breakpoint 480px-  big-phones ---------- */
 @media (max-width: 30em) {
+  .mb-bg {
+    margin-bottom: 8rem;
+  }
   .project-img-box {
     background-image: none;
   }
