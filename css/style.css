@@ -454,6 +454,14 @@
   object-position: bottom;
 }
 
+.project-img-box.project-scale {
+  transition: transform 1s ease-in-out;
+}
+
+.project-img-box.project-scale:hover {
+  transform: scale(1.02);
+}
+
 /* =========== Footer ========== */
 
 .footer {

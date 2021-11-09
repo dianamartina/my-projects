@@ -316,6 +316,7 @@
 
   .project-img {
     margin-top: 2rem;
+    height: auto;
   }
 
   .project-position.project-odd,
@@ -512,11 +513,6 @@
     height: 5.4rem;
     /* padding: 1rem 2rem; */
     margin-bottom: -0.2rem;
-  }
-
-  .hero-text-job {
-    /* margin-left: 0; */
-    /* padding: 0.1rem 1.6rem; */
   }
 
   .project-sources {
