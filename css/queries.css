@@ -62,11 +62,14 @@
   .contact-details {
     margin: 0;
   }
+  .quick-links-list {
+    padding-left: 0;
+  }
 }
 
 /* ---------- Breakpoint 992px-tablets ---------- */
 
-@media (max-width: 57.5em) {
+@media (max-width: 62em) {
   html {
     /* we set it to 8px / 16px = 0.50 = 50% */
     font-size: 50%;
@@ -74,6 +77,14 @@
 
   .logo {
     height: 4rem;
+  }
+
+  .footer .social-media-info {
+    margin-bottom: 2rem;
+  }
+
+  .footer-img-box img {
+    width: 70%;
   }
 
   /* ---------- Mobile navigation ---------- */
@@ -310,6 +321,19 @@
     width: 80%;
   }
 
+  .skill-icon {
+    width: 11rem;
+    height: auto;
+  }
+
+  .skills-body {
+    gap: 3.2rem;
+    padding-bottom: 6.4rem;
+  }
+
+  .skill-title {
+    font-size: 2rem;
+  }
   .project-img-box {
     width: 80%;
   }
@@ -345,10 +369,14 @@
     justify-self: center;
   }
 
+  .footer .social-media-info {
+    margin-bottom: 8rem;
+  }
+
   .contact-details {
     background-color: var(--white);
     border-radius: 20px;
-    padding: 4.8rem 3.2rem;
+    padding: 4.8rem;
   }
 
   .contact-details-content {
@@ -477,7 +505,7 @@
   }
 
   .footer-img-box {
-    width: 65%;
+    width: 90%;
   }
 }
 
@@ -497,12 +525,27 @@
     background-size: 100%;
     background-position: bottom 3rem left 30%;
   }
-}
 
+  .contact-details-content {
+    row-gap: 3.2rem;
+  }
+}
 /* ---------- Breakpoint 360px-  phones ---------- */
 @media (max-width: 22.5em) {
   .heading-primary {
     font-size: 3.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.4rem;
+  }
+
+  .footer .heading-secondary {
+    margin-bottom: 4rem;
+  }
+
+  .social-media-info {
+    gap: 1.2rem;
   }
 
   .hero-text {

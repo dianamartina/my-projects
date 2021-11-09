@@ -580,7 +580,6 @@
 .quick-links-list {
   grid-column: 2 / span 1;
   grid-row: 1 / span 2;
-
   list-style: none;
   font-size: 1.8rem;
   font-weight: 400;
@@ -628,8 +627,9 @@
 }
 
 .address-phone-email-icon {
-  height: 2.4rem;
-  margin-right: 1rem;
+  height: 4rem;
+  width: 4rem;
+  margin-right: 1.6rem;
 }
 
 .address {

@@ -1,3 +1,11 @@
+// Spinner
+// const loading = document.querySelector(".loading");
+// const sectionHero = document.querySelector(".hero-area");
+// setTimeout(() => {
+//   loading.remove();
+//   sectionHero.style.display = "block";
+// }, 1000);
+
 // Navigation elements
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header-full-width");
