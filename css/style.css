@@ -15,23 +15,31 @@
   position: relative;
 }
 
-.header {
-  height: 8rem;
+.header-full-width {
   width: 100%;
-  display: flex;
-  align-items: center;
-  padding: 0 3.2rem;
+
   position: fixed; /* for the menu*/
   top: 0;
   left: 0;
   right: 0;
   z-index: 20;
+  margin: 0 auto;
+}
+
+.header {
+  max-width: 140rem;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  padding: 0 3.2rem;
+  margin: 0 auto;
 }
 
 .header-scrolled {
   background-color: var(--white);
   opacity: 0.95;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
 }
 
 /* ---------- Navigation ---------- */
@@ -432,7 +440,14 @@
   object-fit: cover;
   object-position: top;
   position: relative;
-  transition: object-position 3s ease-in-out;
+}
+
+.project-img.slow-transition {
+  transition: object-position 6s ease-in-out;
+}
+
+.project-img.fast-transition {
+  transition: object-position 2s ease-in-out;
 }
 
 .project-img:hover {
@@ -530,7 +545,7 @@
 }
 
 .footer-img-box img {
-  width: 70%;
+  width: 60%;
 }
 
 .contact-details {
@@ -559,18 +574,19 @@
   grid-row: 1 / span 2;
 
   list-style: none;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 400;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  padding-left: 2.5rem;
 }
 
 .quick-link-title {
-  font-size: 2rem;
+  font-size: 1.9rem;
   color: var(--secondary-dark-1);
   border-bottom: 2px dotted var(--secondary);
-  padding-bottom: 1rem;
+  padding-bottom: 0.7rem;
 }
 
 .quick-link:link,
@@ -584,7 +600,7 @@
 .quick-link:active {
   color: var(--secondary);
   border-bottom: 2px dotted var(--secondary);
-  padding-bottom: 1rem;
+  padding-bottom: 0.7rem;
 }
 
 .address-phone-email-list {
@@ -594,7 +610,7 @@
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
-  font-size: 2rem;
+  font-size: 1.9rem;
   color: var(--secondary-dark-2);
 }
 
@@ -609,7 +625,7 @@
 }
 
 .address {
-  font-size: 1.95rem;
+  font-size: 1.9rem;
 }
 
 .email-link:link,
@@ -628,7 +644,7 @@
 }
 
 .phone-link {
-  font-size: 2.4rem;
+  font-size: 2rem;
   text-decoration: none;
   color: inherit;
 }
@@ -638,6 +654,7 @@
   grid-row: 2 / span 1;
   font-size: 1.6rem;
   font-weight: 400;
+  line-height: 1.5;
   margin-top: 7rem;
   color: var(--secondary);
 }

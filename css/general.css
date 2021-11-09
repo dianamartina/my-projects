@@ -162,7 +162,7 @@ ul {
 .btn:visited {
   display: inline-block;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-weight: 500;
   padding: 1.2rem 2.4rem;
   border-radius: 5px;
@@ -170,7 +170,7 @@ ul {
   cursor: pointer;
 }
 .btn-small {
-  font-size: 1.8rem;
+  font-size: 1.75rem;
   padding: 1rem 2rem;
 }
 
@@ -249,8 +249,8 @@ ul {
 
 /* ---------- paragraph ---------- */
 .text-description {
-  font-size: 1.8rem;
-  letter-spacing: 1px;
+  font-size: 1.7rem;
+  letter-spacing: 0.95px;
   line-height: 1.5;
   margin-bottom: 2rem;
   overflow-wrap: break-word;

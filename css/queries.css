@@ -233,7 +233,7 @@
   }
 
   .footer-img-box img {
-    width: 100%;
+    width: 70%;
   }
 
   .contact-details-content {
@@ -332,6 +332,10 @@
     order: 1;
     width: 50%;
     justify-self: center;
+  }
+
+  .footer-img-box img {
+    width: 100%;
   }
 
   .footer-text-box {

@@ -1,6 +1,6 @@
 // Navigation elements
 const btnNavEl = document.querySelector(".btn-mobile-nav");
-const headerEl = document.querySelector(".header");
+const headerEl = document.querySelector(".header-full-width");
 const heroAreaEl = document.querySelector(".hero-area");
 const allLinksNavEl = document.querySelectorAll(".nav-link");
 const btnMoreAboutEl = document.getElementById("btn-more-about");
@@ -25,15 +25,17 @@ btnNavEl.addEventListener("click", function () {
 // --------- Navigation menu onScroll ---------
 
 const sectionOneOptions = {
-  rootMargin: "-400px 0px 0px 0px ",
+  rootMargin: "-90% 0px 0px 0px ",
 };
 const sectionOneObserver = new IntersectionObserver(function (entries) {
   entries.forEach((entry) => {
     // console.log(entry.target);
     if (!entry.isIntersecting) {
       headerEl.classList.add("header-scrolled");
+      headerEl.style.transition = "all 0.5s ease";
     } else {
       headerEl.classList.remove("header-scrolled");
+      headerEl.style.transition = "all 0.5s ease";
     }
   });
 }, sectionOneOptions);
@@ -74,12 +76,14 @@ allLinksNavEl.forEach(function (link) {
 
 btnMoreAboutEl.addEventListener("click", function () {
   extendAboutEl.style.display = "block";
+  extendAboutEl.style.transition = "all 0.5s ease";
   btnMoreAboutEl.style.display = " none";
   btnLessAboutEl.style.display = " block";
 });
 
 btnLessAboutEl.addEventListener("click", function () {
   extendAboutEl.style.display = "none";
+  extendAboutEl.style.transition = "all 0.5s ease";
   btnMoreAboutEl.style.display = " block";
   btnLessAboutEl.style.display = " none";
 });
@@ -95,7 +99,7 @@ projectPositionEl.forEach((project, i) => {
   // console.log(projectPositionEl);
 });
 
-// --------- Project slider-in effect left-right ---------
+// --------- Add Project slider-in effect left-right ---------
 
 // Function add slide left/right
 const projectSlideInEffect = (i, from) => {
@@ -120,7 +124,7 @@ projectSlideInEl.forEach((slide, i) => {
   }
 });
 
-// --------- Appearance onScroll ---------
+// --------- Appearance projects left-right onScroll ---------
 
 const appearOnScrollOptions = {
   threshold: 0,
