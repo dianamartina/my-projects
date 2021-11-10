@@ -153,11 +153,11 @@
     transform: translateX(0);
   }
 
-  .nav-open .icon-mobile-nav[name="close-btn"] {
+  .nav-open .icon-mobile-nav[data-btn-nav="close-btn"] {
     display: block;
   }
 
-  .nav-open .icon-mobile-nav[name="menu-btn"] {
+  .nav-open .icon-mobile-nav[data-btn-nav="menu-btn"] {
     display: none;
   }
 }

@@ -14,6 +14,7 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#357e88">
     <meta name="msapplication-TileColor" content="#a43e8a">
     <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Personal projects, with HTML, CSS, JS vanilla, ReactJS and Redux">
 
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/style.css">
@@ -24,7 +25,8 @@
 </head>
 
 <body class="body">
-    <!-- <div class="loading">
+    <!-- #TODO -->
+    <!-- <div class="loading" >
         <img src="images/spinner.gif" width="100" height="100" alt="loading spinner image">
     </div> -->
     <section class="section-hero ">
@@ -45,9 +47,9 @@
                     </ul>
                 </nav>
                 <button class="btn-mobile-nav">
-                    <img src="images/menu-btn.svg" alt="menu button" class="icon-mobile-nav" name="menu-btn" width="26"
-                        height="26">
-                    <img src="images/close-btn.svg" alt="close button" class="icon-mobile-nav" name="close-btn"
+                    <img src="images/menu-btn.svg" alt="menu button" class="icon-mobile-nav" data-btn-nav="menu-btn"
+                        width="26" height="26">
+                    <img src="images/close-btn.svg" alt="close button" class="icon-mobile-nav" data-btn-nav="close-btn"
                         width="26" height="26">
                 </button>
             </header>
@@ -73,7 +75,7 @@
                 </div>
             </div>
         </section>
-        </div>
+
     </section>
     <main class="main ">
         <article class="section-about-me container" id="about">
@@ -136,7 +138,7 @@
                     <p class="skill-title">HTML</p>
                     <svg class="skill-icon-img" class="skill-icon-img" viewBox="0 0 27 32"
                         xmlns="http://www.w3.org/2000/svg">
-                        <path fill="url(#gradient)" fill="url(#gradient)"
+                        <path fill="url(#gradient)"
                             d="M0.391602 0.449707L2.73567 28.3497L13.2548 31.4497L23.8013 28.3458L26.149 0.449707H0.393427H0.391602ZM21.0465 9.57533H8.70904L9.00296 13.0803H20.7544L19.8689 23.5854L13.2548 25.5306L6.64976 23.5854L6.19884 18.2108H9.43563L9.66566 20.9426L13.2566 21.9695L13.2639 21.9676L16.8567 20.9388L17.2291 16.5019H6.05462L5.18563 6.15371H21.3367L21.0483 9.57533H21.0465Z" />
                         <linearGradient id="gradient" gradientTransform="rotate(15)">
                             <stop class="gradient-start" offset="0%" />
@@ -453,7 +455,6 @@
                                             loading="lazy" />
                                     </picture>
                                 </a>
-                                </class=>
                             </div>
                         </div>
                     </div>
@@ -628,7 +629,7 @@
                         <ul class="social-media-icons">
                             <li>
                                 <a href="https://www.linkedin.com/in/diana-martina-seiculescu/" target="_blank"
-                                    rel="noopener noreferrer" class="social-media-link">
+                                    rel="noopener noreferrer" class="social-media-link" title="LinkedIn">
                                     <!-- linkedIn icon -->
                                     <svg class="social-media-icon" viewBox=" 0 0 31 31"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -639,7 +640,7 @@
                             </li>
                             <li>
                                 <a href="https://github.com/dianamartina" target="_blank" rel="noopener noreferrer"
-                                    class="social-media-link">
+                                    class="social-media-link" title="Github">
                                     <!-- github icon -->
                                     <svg class="social-media-icon" viewBox=" 0 0 33 31"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -650,7 +651,7 @@
                             </li>
 
                             <li><a href="https://twitter.com/DianaMartina18" target="_blank" rel="noopener noreferrer"
-                                    class="social-media-link">
+                                    class="social-media-link" title="Twitter">
                                     <!-- twitter -->
                                     <svg class="social-media-icon" viewBox=" 0 0 31 31"
                                         xmlns="http://www.w3.org/2000/svg">

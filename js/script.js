@@ -32,6 +32,7 @@ btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
 
+// #TODO
 // if (headerEl.classList.contains("nav-open")) {
 //   body.classList.add("fixed-position");
 // } else {

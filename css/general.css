@@ -27,6 +27,7 @@
   --secondary-light-2: #be63a7;
   --secondary-dark-1: #922276;
   --secondary-dark-2: #73105a;
+  --secondary-dark-3: #660b4f;
   --tertiary: #f6c45f;
   --tertiary-light-1: #fae1af;
   --tertiary-light-2: #f7cc77;
@@ -179,12 +180,12 @@ ul {
 .btn-full-sec:visited {
   background-color: var(--secondary-dark-1);
   color: var(--white);
-  transition: all 0.3s;
+  transition: all 0.3s ease-in;
 }
 
 .btn-full-sec:hover,
 .btn-full-sec:active {
-  background-color: var(--secondary-dark-2);
+  background-color: var(--secondary-dark-3);
   color: var(--white);
 }
 
@@ -209,7 +210,7 @@ ul {
   background-color: transparent;
   color: var(--secondary-dark-1);
   box-shadow: inset 0 0 0 1px var(--secondary);
-  transition: all 0.3s;
+  transition: all 0.4s ease-in;
 }
 
 .btn-outline-ter-sm:hover,
@@ -238,7 +239,7 @@ ul {
 .btn-outline-ter:visited {
   color: var(--secondary-dark-1);
   box-shadow: inset 0 0 0 1px var(--secondary); /* creates a border*/
-  transition: all 0.3s;
+  transition: all 0.4s ease-in;
 }
 
 .btn-outline-ter:hover,
@@ -291,6 +292,10 @@ ul {
 
 .from-left {
   transform: translateX(-50%);
+}
+
+.flex-align {
+  display: flex;
 }
 
 .from-right,

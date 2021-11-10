@@ -91,7 +91,7 @@
 }
 
 /* we don't display the close button */
-.icon-mobile-nav[name="close-btn"] {
+.icon-mobile-nav[data-btn-nav="close-btn"] {
   display: none;
 }
 
@@ -552,7 +552,7 @@
   text-decoration: none;
   display: block;
   fill: var(--secondary-dark-2);
-  transition: all 0.5s;
+  transition: all 0.6s ease-in;
 }
 
 .social-media-link:hover,
