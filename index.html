@@ -10,7 +10,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <!-- <link rel="manifest" href="/site.webmanifest"> -->
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#357e88">
     <meta name="msapplication-TileColor" content="#a43e8a">
     <meta name="theme-color" content="#ffffff">
@@ -23,14 +23,14 @@
     <title>Diana Martina projects</title>
 </head>
 
-<body>
+<body class="body">
     <!-- <div class="loading">
         <img src="images/spinner.gif" width="100" height="100" alt="loading spinner image">
     </div> -->
     <section class="section-hero ">
         <div class="header-full-width">
             <header class="header">
-                <a href="#"><img src="images/logo.svg" alt="logo name" class="logo"></a>
+                <a href="#"><img src="images/logo.svg" alt="logo name" class="logo" width="270" height="41"></a>
 
                 <nav class="main-nav">
                     <ul class="main-nav-list">
@@ -45,8 +45,10 @@
                     </ul>
                 </nav>
                 <button class="btn-mobile-nav">
-                    <img src="images/menu-btn.svg" alt="menu button" class="icon-mobile-nav" name="menu-btn">
-                    <img src="images/close-btn.svg" alt="close button" class="icon-mobile-nav" name="close-btn">
+                    <img src="images/menu-btn.svg" alt="menu button" class="icon-mobile-nav" name="menu-btn" width="26"
+                        height="26">
+                    <img src="images/close-btn.svg" alt="close button" class="icon-mobile-nav" name="close-btn"
+                        width="26" height="26">
                 </button>
             </header>
         </div>
@@ -59,32 +61,28 @@
             <div class="hero-blob two"></div>
             <div class="hero-text">
                 <h1 class="heading-primary">
-                    <img src="images/DianaMartina-name.svg" alt="Diana Martina gradient name"
-                        class="hero-img-text-name"><br />
+                    <img src="images/DianaMartina-name.svg" alt="Diana Martina name" class="hero-img-text-name"
+                        width="451" height="142"><br />
                     <span class="hero-text-job ">front-end developer</span>
                 </h1>
                 <p class="subheading">Let's make the web beautiful and user friendly for everyone!</p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-full-sec">Contact me</a>
                     <a href="https://github.com/dianamartina/my-projects" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-outline-ter">Source code</a>
+                        class="btn btn-outline-ter">About this project</a>
                 </div>
             </div>
         </section>
         </div>
     </section>
-
-
     <main class="main ">
         <article class="section-about-me container" id="about">
             <h2 class="heading-secondary mb-bg"> Find more about me</h2>
-
             <div class="grid-2-cols about-me-box">
                 <div class="about-me-text fade-in">
                     <p class="text-description">
                         I'm <strong>Diana Martina Seiculescu</strong>, front-end developer with a technical degree in
                         civil engineering, passionate about #HTML, #CSS, #JS, #ReactJs and #Redux.
-
                     </p>
                     <p class="text-description">
                         After working a couple of years in the civil engineering industry I decided to switch career
@@ -132,7 +130,7 @@
         <section class="section-skills">
             <h2 class="heading-secondary mb-bg"> Skills & tools</h2>
 
-            <p class="skills-top-heading"><span>Front - end</span></p>
+            <h3 class="skills-top-heading"><span>Front - end</span></h3>
             <ul class="skills-body">
                 <li class="skill-icon">
                     <p class="skill-title">HTML</p>
@@ -203,7 +201,7 @@
                 </li>
             </ul>
             <!-- <hr class="mb-bg"> -->
-            <p class="skills-top-heading"><span>General & design</span></p>
+            <h3 class="skills-top-heading"><span>General & design</span></h3>
 
             <ul class="skills-body">
                 <li class="skill-icon">

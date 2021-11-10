@@ -321,6 +321,10 @@
     width: 80%;
   }
 
+  .section-about-me .fade-in {
+    opacity: 1;
+  }
+
   .skill-icon {
     width: 11rem;
     height: auto;
@@ -347,6 +351,12 @@
   .project-position.project-even {
     background-size: 70%;
     background-position: bottom 8rem left 30%;
+  }
+
+  .project-slide-in.from-left,
+  .project-slide-in.from-right {
+    transform: translateX(0);
+    opacity: 1;
   }
 
   .social-media-info {
@@ -514,6 +524,11 @@
   .mb-bg {
     margin-bottom: 8rem;
   }
+
+  .hero-buttons {
+    gap: 2.4rem;
+  }
+
   .project-img-box {
     background-image: none;
   }
@@ -541,6 +556,10 @@
 
   .heading-secondary {
     font-size: 3.4rem;
+  }
+
+  .hero-buttons {
+    gap: 1.2rem;
   }
 
   .footer .heading-secondary {

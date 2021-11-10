@@ -7,6 +7,8 @@
 // }, 1000);
 
 // Navigation elements
+const body = document.querySelector(".body");
+
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header-full-width");
 const heroAreaEl = document.querySelector(".hero-area");
@@ -29,6 +31,12 @@ const projectSlideInEl = document.querySelectorAll(".project-slide-in");
 btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
+
+// if (headerEl.classList.contains("nav-open")) {
+//   body.classList.add("fixed-position");
+// } else {
+//   body.classList.remove("fixed-position");
+// }
 
 // --------- Navigation menu onScroll ---------
 
@@ -114,6 +122,19 @@ const projectSlideInEffect = (i, from) => {
   projectSlideInEl[i].classList.add(from);
 };
 
+//Order of project-slide-in elements
+// console.log(projectSlideInEl);
+//0: div.project-slide-in.from-left.appear
+// 1: div.project-slide-in.from-right.appear
+// 2: div.project-slide-in.from-right.appear
+// 3: div.project-slide-in.from-left.appear
+// 4: div.project-slide-in.from-left.appear
+// 5: div.project-slide-in.from-right.appear
+// 6: div.project-slide-in.from-right
+// 7: div.project-slide-in.from-left
+// 8: div.project-slide-in.from-left
+// 9: div.project-slide-in.from-right
+
 projectSlideInEl.forEach((slide, i) => {
   // console.log(slide);
   while (i % 2 === 0) {
@@ -153,6 +174,7 @@ const appearOnScroll = new IntersectionObserver(function (
 },
 appearOnScrollOptions);
 
+// general writing for all
 fadeInEl.forEach((fader) => {
   appearOnScroll.observe(fader);
 });
