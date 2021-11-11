@@ -209,7 +209,6 @@
 }
 
 .hero-text {
-  /* max-height: calc(100vh - 8rem); */
   width: 100%;
   align-self: center;
   justify-self: end;
