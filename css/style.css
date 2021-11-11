@@ -411,7 +411,7 @@
 .project-tool span {
   font-size: 1.5rem;
   font-weight: 500;
-  color: var(--grey-dark-1);
+  color: var(--primary-dark-1);
   font-style: italic;
 }
 
