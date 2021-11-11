@@ -301,7 +301,7 @@
   }
 
   .hero-image {
-    max-width: 70%;
+    max-width: 60%;
   }
 
   .hero-text {
@@ -448,7 +448,7 @@
   }
 
   .hero-image {
-    max-width: 100%;
+    max-width: 75%;
   }
 
   .hero-text-name {
@@ -556,6 +556,10 @@
 
   .heading-secondary {
     font-size: 3.4rem;
+  }
+
+  .hero-image {
+    max-width: 90%;
   }
 
   .hero-buttons {
