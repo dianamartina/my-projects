@@ -200,12 +200,10 @@
 }
 
 .hero-image {
-  max-width: 90%;
-  width: 100%;
+  max-width: 100%;
   display: block;
   /* padding-top: 3rem; */
-  /* max-height: calc(100vh - 8rem); */
-  height: auto;
+  max-height: calc(100vh - 8rem);
   position: relative;
   z-index: 4;
 }
