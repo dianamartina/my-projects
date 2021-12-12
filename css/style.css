@@ -442,7 +442,8 @@
   background-position: top 8rem left 2vw;
 }
 
-.project-img {
+.project-img,
+.project-img-static {
   width: 85%;
   height: 55rem;
   min-height: 55rem;
@@ -451,6 +452,10 @@
   object-fit: cover;
   object-position: top;
   position: relative;
+}
+
+.project-img-static {
+  height: 55rem;
 }
 
 .project-img.slow-transition {
